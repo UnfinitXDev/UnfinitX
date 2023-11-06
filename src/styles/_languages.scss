@@ -1,0 +1,28 @@
+.languages {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    &__btn {
+        font-family: Arial;
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        color: $white;
+        cursor: pointer;
+        @media (max-width: 992px) {
+            font-size: 16px;
+        }
+
+        &.active {
+            padding-bottom: 8px;
+            border-bottom: 2px solid $white;
+        }
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+{
+    "//comment1": "Menu Items",
+    "home": "Home",
+    "services": "Services",
+    "aboutus": "About Us",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts",
+   
+    "//comment2": "Timeline Info",
+    "timeline_os": "Our Services",
+    "timeline_wcs": "Why choose us",
+    "timeline_partners": "Partners",
+    "timeline_contacts": "Contacts",
+    
+    "//comment3": "Timeline Our Services Info",
+    "tos_heading": "Step up into future's projects with us !",
+    "tos_text": "Founded in 2015, UnfinitX is a provider of IT consulting and software development services. UnfinitX centers its operations in the US, CIS countries and Europe. Throughout the company’s history, we have worked with over 250 customers from 12+ countries.",
+    "tos_btn": "Discuss a project",
+    "tos_sub1": "Our services",
+    "tos_web": "Web development",
+    "tos_mobile": "Mobile apps",
+    "tos_site": "Site corporation",
+    "tos_landing": "Landing pages",
+    "tos_uiux": "Ux/ui design",
+    "tos_marketing": "Marketing promotion",
+    
+    "//comment4": "Timeline Why choose us Info",
+    "twcs_heading": "Why choose us ?",
+    "twcs_sub2_1": "Quality in the first place",
+    "twcs_text_1": "We provide only high-quality software and services to our clients. We guarantee you will get tangible business value from your IT investments, enjoy healthy project processes, professional and motivated teams, effective communication between UnfinitX, your teams, and stakeholders.",
+    "twcs_sub2_2": "Top-notch security",
+    "twcs_text_2": "Our approach builds on diligent IT assets management, secure environment, strict access control, strong encryption algorithms, continuous IT infrastructure monitoring, and the \"security is everyone's responsibility\" mindset.",
+    "twcs_sub2_3": "Fast development while retaining application stability",
+    "twcs_text_3": "We established a set of management and technology practices that allows us to release new application versions every 2–3 weeks and implement minor updates up to several times a day. We achieve that due to an iterative approach to development, resorting to Agile project management practices, and relying on cloud-native architectures and modern approaches to infrastructure management.",
+    
+    "//comment5": "Timeline Partners",
+    "tp_heading": "Past and current clients",
+    "tp_text": "Our esteemed clientele includes a diverse range of past and present partners, spanning various industries and sectors.",
+
+    "//comment6":"Timeline Contacts",
+    "tc_heading":"Why Companies Choose UnfinitX: Building Trust with Transparency",
+    "tc_text":"Outsourcing to another company, however reputable it is, always comes with a risk. The best we can do as a vendor to lower that risk is to be completely transparent about who we are, what we do, and where we have succeeded.",
+    "tc_btn":"Discuss a project",
+    "tc_address":"Armenia, Vanadzor, Tigran Mets 8",
+    "tc_copyright":"© UnfinitX 2023. All rights reserved.",
+
+    "//comment7":"Services",
+    "services_heading":"our services",
+    "services_mobile_heading":"our services",
+    "services_modal_order":"Order",
+    "services_modal_costfrom":"Cost from",
+
+
+    "//comment8":"Services Web",
+    "services_web": "Web development",
+    "services_web_modal_heading": "Website development for your business",
+    "services_web_modal_text": "We know how to solve your problem in the best way",
+
+    "//comment9":"Services Mobile",
+    "services_mobile": "Mobile apps",
+    "services_mobile_modal_heading": "Mobile application development",
+    "services_mobile_modal_text": "We know how to solve your problem in the best way",
+
+    "//comment10":"Services Ecommerce",
+    "services_ecommerce": "E commerce",
+    "services_ecommerce_modal_heading": "E commerce sites development",
+    "services_ecommerce_modal_text": "We know how to solve your problem in the best way",
+
+    "//comment11":"Services Landing",
+    "services_landing": "Landing page",
+    "services_landing_modal_heading": "Landing page",
+    "services_landing_modal_text": "Single-page site for growth of advertising efficiency",
+
+    "//comment12":"Services UX UI",
+    "services_uxui": "UX/UI Design",
+    "services_uxui_modal_heading": "UI/UX design for your business",
+    "services_uxui_modal_text": "We know how to solve your problem in the best way",
+
+    "//comment13":"Services Marketing",
+    "services_marketing": "Marketing promotion",
+    "services_marketing_modal_heading": "Marketing promotion",
+    "services_marketing_modal_text": "We know how to solve your problem in the best way",
+
+    "//comment14": "About Us",
+    "aboutus__heading": "about us",
+    "aboutus_mobile_heading": "about us",
+    "aboutus__subheading": "We are a company of satisfied customers",
+    "aboutus__text": "For us, a client’s website is not a spectacular picture on the web, but a powerful locomotive of e-commerce. We create effective tools for earning and promoting online business. \nTherefore, before development, we pay special attention to the analysis of the customer’s company, target audience and products. \n\nWe need to see the business through your eyes, so be prepared to keep in touch with us at every stage of your project.",
+    "aboutus__btn": "contact with us",
+    "aboutus_mobile_customer_heading": "How to become our customer. Three simple steps",
+    "aboutus_mobile_customer1": "Contact us by e-mail or phone and tell us about your problem.",
+    "aboutus_mobile_customer2": "Get a detailed personalised quote.",
+    "aboutus_mobile_customer3": "Sign a contract and enjoy the process and the result.",
+
+
+
+
+    "//comment15": "Portfolio",
+    "portfolio_heading": "our projects",
+    "portfolio_mobile_heading": "our projects",
+
+    "portfolio_text": "Outsourcing of software development is just a tool to achieve business goals. But there is no way to get decent results without cooperation and trust between the company-client.",
+    "portfolio_tabs_all": "All works",
+    "portfolio_tabs_mobile": "mobile",
+    "portfolio_tabs_uxui": "ux/ui design",
+    "portfolio_tabs_marketing": "Marketing",
+    "portfolio_tabs_landing": "Landing",
+    "portfolio_tabs_ecommerce": "e commerce",
+
+    "//comment16": "Contacts",
+    "contacts_heading": "our contatcts",
+    "contacts_mobile_heading": "our contatcts",
+    "contacts_text": "Give us a call or come at any time, we will try to answer all questions within 24 hours on weekdays. We will be happy to answer your questions.",
+    "contacts_name_input": "Name",
+    "contacts_phone_input": "Phone",
+    "contacts_email_input": "Email",
+    "contacts_message_input": "Write a message...",
+    "contacts_address":"Vanadzor, Tigran Mets 8",
+    "contacts_name_input_required_error": "Name is required",
+    "contacts_phone_input_required_error": "Phone number is required",
+    "contacts_email_input_required_error": "Email is required",
+    "contacts_phone_input_pattern_error": "Phone number must contain only digits and + symbol",
+    "contacts_btn": "Submit"
+
+}

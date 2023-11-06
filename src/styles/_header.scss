@@ -1,0 +1,114 @@
+.header {
+    padding-block: 8px;
+    margin: 0px 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color:$main-violet;
+    transition: positions .4s ease;
+    &__mobile_logo {
+        img {
+            height: 50px;
+        }
+    }
+    .burger {
+        background-color: $dark-violet;
+        box-shadow: 48px 25px 16px 56px rgba(0, 0, 0, 0.16);
+        padding: 16px 16px 24px 24px;
+        
+        &__logo {
+            height: 60px;
+            width: 60px;
+            margin-bottom: 54px;
+            img {
+                display: block;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        &__menu {
+            &_link {
+                display: block;
+                font-family: "Anonymous Pro", monospace;
+                font-size: 24px;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $white;
+                position: relative;
+                opacity: 0.48;
+                letter-spacing: 1.92px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                @media (max-width: 992px) {
+                    font-size: 16px;
+                }
+                span {
+                    width: 16px;
+                    height: 2px;
+                    display: block;
+                    background-color: $white;
+                }
+                &.active {
+                    opacity: 1;
+                    font-size: 24px;
+                    letter-spacing: 1.96px;
+                    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+                    @media (max-width: 992px) {
+                        font-size: 20px;
+                    }
+                }
+                &:not(:last-child) {
+                    margin-bottom: 32px;
+                    @media (max-width: 992px) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        &-languages {
+            margin-top: 48px;
+        }
+    }
+    .bm-burger-button {
+        width: 30px;
+        height: 30px;
+        color: $white;
+        position: relative;
+    }
+    .bm-cross-button {
+        color: $white;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .bm-menu-wrap {
+        top: 0;
+    }
+}
+
+:lang(am) {
+    .bm-menu-wrap {
+        width: 260px !important;
+    }
+    .page__heading {
+        font-size: 20px;
+        letter-spacing: 0.8px;
+    }
+    .burger {
+        &__menu {
+            &_link {
+                font-size: 16px;
+                letter-spacing: normal;
+                gap: 8px;
+                &.active {
+                    font-size: 18px;
+                    letter-spacing: normal;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.footer {
+    margin: 0 16px;
+    padding: 16px;
+    margin-bottom: 32px;
+    background-color: $dark-violet;
+    border-radius: 12px;
+    box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.16);
+    &__logo {
+        height: 70px;
+            display: block;
+            width: 70px;
+        img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__contacts {
+        margin-left: 32px;
+        margin-bottom: 24px;
+        width: 100%;
+        @media (max-width: 600px) {
+            margin-left: 16px;
+        }
+        &_phone,
+        &_address {
+            display: flex;
+            align-items: center;
+            color: $white;
+        }
+        &_address {
+            margin-bottom: 8px;
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+            p {
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 1.12px;
+                margin-left: 8px;
+                @media (max-width: 600px) {
+                    font-size: 12px;
+                    letter-spacing: 0.96px;
+                }
+            }
+        }
+        &_phone {
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+            a {
+                text-decoration: none;
+                color: $white;
+                font-family: Arial;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.12px;
+                margin-left: 8px;
+                @media (max-width: 600px) {
+                    font-size: 12px;
+                    letter-spacing: 0.96px;
+                }
+            }
+        }
+    }
+    &__menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 32px;
+        margin-top: 24px;
+        @media (max-width: 600px) {
+            column-gap: 16px;
+            margin-top: 16px;
+        }
+        &_link {
+            font-family: "Anonymous Pro", monospace;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1.28px;
+            text-transform: uppercase;
+            color: #e0e0e0;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            @media (max-width: 600px) {
+                font-size: 14px;
+            }
+            span {
+                width: 8px;
+                height: 2px;
+                display: block;
+                background-color: #e0e0e0;
+            }
+        }
+    }
+    &__copyright {
+        color: #bdbdbd;
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+:lang(am) {
+    .footer {
+        &__menu {
+            &_link {
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0;
+            }
+            @media (max-width: 400px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+    }
+}

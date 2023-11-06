@@ -1,0 +1,214 @@
+@import "styles/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    position: relative;
+}
+
+body {
+    background-color: $main-violet;
+    @media (min-width: 992px) {
+        overflow-x: hidden;
+    }
+}
+
+.gen-wrapper {
+    @media (min-width: 993px) {
+        display: flex;
+        position: relative;
+    }
+}
+
+.heading {
+    color: $white;
+    font-family: "Roboto", sans-serif;
+    font-size: 96px;
+    line-height: 113px;
+    font-weight: 900;
+    letter-spacing: 7.68px;
+    text-transform: uppercase;
+    @media (max-width: 1280px) {
+        font-size: 64px;
+        letter-spacing: 5.12px;
+        line-height: normal;
+    }
+    @media (max-width: 992px) {
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 1.92px;
+    }
+}
+
+.heading2 {
+    color: $white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: normal;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 3.84px;
+    @media (max-width: 1280px) {
+        font-size: 32px;
+        letter-spacing: 2.56px;
+    }
+    @media (max-width: 992px) {
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 2.4px;
+    }
+}
+
+.text {
+    color: $white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: normal;
+
+    font-size: 24px;
+    letter-spacing: 1.92px;
+    text-align: left;
+    @media (max-width: 1440px) {
+        font-size: 20px;
+    }
+    @media (max-width: 1280px) {
+        font-size: 16px;
+        letter-spacing: 1.28px;
+    }
+    @media (max-width: 992px) {
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 1.2px;
+    }
+}
+
+.sub1 {
+    color: $white;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.56px;
+    text-transform: uppercase;
+}
+
+.sub2 {
+    color: $white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 1.92px;
+    font-weight: 700;
+    @media (max-width: 1280px) {
+        font-size: 20px;
+        letter-spacing: 1.6px;
+    }
+    @media (max-width: 992px) {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1.44px;
+    }
+}
+
+.primary-btn {
+    border: none;
+    background-color: $white;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.32);
+    cursor: pointer;
+    color: $dark-violet;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 24px 32px;
+    font-size: 24px;
+    border-radius: 16px;
+    @media (max-width: 992px) {
+        padding: 16px 32px;
+        border-radius: 12px;
+        font-size: 20px;
+    }
+}
+
+@import "styles/sidebar";
+@import "styles/timeline";
+@import "styles/timelineourservices";
+@import "styles/timelinewcs";
+@import "styles/timelinepartners";
+@import "styles/timelinecontacts";
+@import "styles/services";
+@import "styles/modal";
+@import "styles/aboutus";
+@import "styles/portfolio";
+@import "styles/contacts";
+@import "styles/header";
+@import "styles/footer";
+@import "styles/socials";
+@import "styles/languages";
+
+:lang(am) {
+    * {
+        font-family: "Arial", sans-serif !important;
+    }
+
+    .heading {
+        font-weight: 700;
+        @media (max-width: 1620px) {
+            font-size: 64px;
+            line-height: normal;
+            letter-spacing: 5.12px;
+        }
+        @media (max-width: 1280px) {
+            font-size: 40px;
+            line-height: normal;
+            letter-spacing: 3.2px;
+        }
+        @media (max-width: 992px) {
+            font-size: 32px;
+            letter-spacing: 1.4px;
+        }
+        @media (max-width: 600px) {
+            font-size: 20px;
+            letter-spacing: 0.8px;
+        }
+    }
+    .heading2 {
+        font-weight: 700;
+        @media (max-width: 1280px) {
+            font-size: 32px;
+            letter-spacing: 2.56px;
+        }
+        @media (max-width: 992px) {
+            font-size: 24px;
+            letter-spacing: 2.4px;
+        }
+    }
+}
+
+:lang(ru) {
+    .heading {
+        font-weight: 700;
+        @media (max-width: 1620px) {
+            font-size: 64px;
+            line-height: normal;
+            letter-spacing: 5.12px;
+        }
+        @media (max-width: 1280px) {
+            font-size: 40px;
+            line-height: normal;
+            letter-spacing: 3.2px;
+        }
+        @media (max-width: 992px) {
+            font-size: 32px;
+            letter-spacing: 1.4px;
+        }
+        @media (max-width: 600px) {
+            font-size: 20px;
+            letter-spacing: 0.8px;
+        }
+    }
+}
