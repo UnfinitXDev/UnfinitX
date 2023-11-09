@@ -36,9 +36,12 @@
         overflow: hidden;
         &_sub {
             margin-bottom: 1vh;
+            // font-size: 1.;
         }
         &_text {
-            font-size: 1vw;
+            @media (max-width: 1280px) {
+                font-size: .8vw;
+            }
         }
         &_btn {
             height: fit-content;
