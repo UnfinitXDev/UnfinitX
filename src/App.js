@@ -6,7 +6,6 @@ import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
 import { useTranslation } from "react-i18next";
-import PDF from "./pages/PDF";
 
 const router = createBrowserRouter([
   {
@@ -29,10 +28,6 @@ const router = createBrowserRouter([
       {
         path: 'contacts',
         element: <Contacts />,
-      },
-      {
-        path: 'pdf/:name',
-        element: <PDF />,
       },
     ]
 
