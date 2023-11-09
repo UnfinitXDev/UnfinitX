@@ -6,6 +6,7 @@ import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
 import { useTranslation } from "react-i18next";
+import PDF from "./pages/PDF";
 
 const router = createBrowserRouter([
   {
@@ -16,9 +17,6 @@ const router = createBrowserRouter([
       {
         path: 'aboutus',
         element: <AboutUs />,
-        children: [
-
-        ]
       },
       {
         path: 'portfolio',
@@ -32,6 +30,10 @@ const router = createBrowserRouter([
         path: 'contacts',
         element: <Contacts />,
       },
+      {
+        path: 'pdf/:name',
+        element: <PDF />,
+      },
     ]
 
   }
@@ -40,7 +42,6 @@ const router = createBrowserRouter([
 const App = () => {
   const { i18n: { language } } = useTranslation()
   document.documentElement.lang = language;
-
   return (
     <RouterProvider router={router} />
   )

@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { PROJECTS } from "../constants"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const Portfolio = () => {
 	const { t } = useTranslation()
@@ -68,14 +69,14 @@ const Portfolio = () => {
 				</div>
 				<div className="portfolio__tabs_content">
 					{PROJECTS[activeTab.name].map(project => (
-						<div key={project.id} className="project">
+						<Link to={'/pdf/CV-EmanuelMnatsakanyan.pdf'} target='_blank' key={project.id} className="project">
 							{project.image && <img
 								className="project__image"
 								loading="lazy"
 								src={project.image}
 								alt={project.name}
 							/>}
-						</div>
+						</Link>
 					))}
 				</div>
 			</div>

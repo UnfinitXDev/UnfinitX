@@ -16,22 +16,22 @@ const timelineData = [
     },
     {
         id: 2,
-        position: '40%',
+        position: '50%',
         title: 'timeline_wcs',
         content: <div>cc2</div>,
     },
     {
         id: 3,
-        position: '75%',
+        position: '100%',
         title: 'timeline_partners',
         content: <div>cc3</div>,
     },
-    {
-        id: 4,
-        position: '100%',
-        title: 'timeline_contacts',
-        content: <div>cc4</div>,
-    },
+    // {
+    //     id: 4,
+    //     position: '100%',
+    //     title: 'timeline_contacts',
+    //     content: <div>cc4</div>,
+    // },
 ];
 
 const Timeline = () => {
@@ -79,12 +79,13 @@ const Timeline = () => {
             </div>
             <div className='slides' >
                 <div className='slides__wrapper' style={{
-                transform: `translateX(${activeSlideIndex <= 2 ? `calc(${activeSlideIndex} * (-90% - ${slidesGap}px))` : `calc(-180% - ${2 * slidesGap}px - (400px - (10% - ${slidesGap}px)`})`
+                // transform: `translateX(${activeSlideIndex <= 2 ? `calc(${activeSlideIndex} * (-90% - ${slidesGap}px))` : `calc(-180% - ${2 * slidesGap}px - (400px - (10% - ${slidesGap}px)`})`
+                transform: `translateX(${activeSlideIndex * -88}%)`
+            
             }}>
                     <TimelineOurServices />
                     <TimelineWhyChooseUs />
                     <TimelinePartners />
-                    <TimelineContacts />
                 </div>
             </div>
         </div>
