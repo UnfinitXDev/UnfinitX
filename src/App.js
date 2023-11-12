@@ -3,7 +3,6 @@ import RootLayout from "./pages/RootLayout";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Portfolio from "./pages/Portfolio";
-import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
 import { useTranslation } from "react-i18next";
 
@@ -20,10 +19,6 @@ const router = createBrowserRouter([
       {
         path: 'portfolio',
         element: <Portfolio />,
-      },
-      {
-        path: 'services',
-        element: <Services />,
       },
       {
         path: 'contacts',

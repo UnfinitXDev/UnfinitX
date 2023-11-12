@@ -13,7 +13,7 @@ html {
 body {
     background-color: $main-violet;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .gen-wrapper {
@@ -47,15 +47,11 @@ body {
     color: $white;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    font-size: 2.8vw;
+    font-size: 2.5vw;
     line-height: normal;
     font-weight: 900;
     text-align: left;
-    letter-spacing: 3.84px;
-    @media (max-width: 1280px) {
-        // font-size: 32px;
-        // letter-spacing: 2.56px;
-    }
+    letter-spacing: 0.2vw;
     @media (max-width: 992px) {
         text-align: center;
         font-size: 24px;
@@ -72,28 +68,16 @@ body {
     font-size: .9vw;
     letter-spacing: .05vw;
     text-align: left;
-    // @media (max-width: 1440px) {
-    //     font-size: 20px;
-    // }
-    // @media (max-width: 1280px) {
-    //     font-size: 16px;
-    //     letter-spacing: 1.28px;
-    // }
-    // @media (max-width: 992px) {
-    //     text-align: center;
-    //     font-size: 15px;
-    //     letter-spacing: 1.2px;
-    // }
 }
 
 .sub1 {
     color: $white;
     font-family: "Roboto", sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 2.56px;
+    letter-spacing: 0.13vw;
     text-transform: uppercase;
 }
 
@@ -124,14 +108,9 @@ body {
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 24px 32px;
-    font-size: 24px;
-    border-radius: 16px;
-    @media (max-width: 992px) {
-        padding: 16px 32px;
-        border-radius: 12px;
-        font-size: 20px;
-    }
+    padding: 1.25vw 1.66vw;
+    font-size: 1.25vw;
+    border-radius: 0.833vw;
 }
 
 @import "styles/sidebar";
@@ -140,7 +119,6 @@ body {
 @import "styles/timelinewcs";
 @import "styles/timelinepartners";
 @import "styles/timelinecontacts";
-@import "styles/services";
 @import "styles/modal";
 @import "styles/aboutus";
 @import "styles/portfolio";

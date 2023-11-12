@@ -1,36 +1,18 @@
 .social {
-    // margin: 128px 0 120px;
-    display: flex;
-    // flex-direction: column;
-
-    gap: 16px;
-    @media (max-width: 1280px) {
-        // margin: 40px 0 48px;
-    }
-    @media (max-width: 992px) {
-        flex-direction: row;
-        margin: 0;
-        margin-top: 36px;
-    }
+    display: grid;
+    grid-template-columns: repeat(4, 1.45vw);
+    border: 1.165px solid #FFF;
+    border-radius: 0.72vw;
+    padding: 0.48vw 0.6vw;
+    gap: 1.99vh;
+    margin-bottom: 2.88vh;
     &__link {
         width: fit-content;
-        &:not(:last-child) {
-            margin-bottom: 24px;
-            @media (max-width: 992px) {
-                margin-bottom: 0;
-                margin-right: 16px;
-            }
-        }
         & > img,
         & > svg {
-            width: 32px;
-            height: 32px;
-            font-size: 32px;
-            @media (max-width: 992px) {
-                width: 24px;
-                height: 24px;
-                font-size: 24px;
-            }
+            width: 1.4vw;
+            height: 1.4vw;
+            font-size: 1.4vw;
         }
     }
 }

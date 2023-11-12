@@ -19,46 +19,44 @@ const TimelineOurServices = () => {
 			</h1>
 			<div className='tos__wrapper'>
 				<div className='tos__services'>
-					<div className='tos__services_block'>
-						<p className='tos__services_service'>
-							<img className='tos__services_icon' src={WebIcon} alt='Web Icon' />
-							<span className='tos__services_line'></span>
-							{t('tos_web')}
-							<span className='tos__services_line second'></span>
-						</p>
-						<p className='tos__services_service'>
-							<img className='tos__services_icon' src={MobileIcon} alt='Mobile Icon' />
-							<span className='tos__services_line'></span>
-							{t('tos_mobile')}
-							<span className='tos__services_line second'></span>
-						</p>
-						<p className='tos__services_service'>
-							<img className='tos__services_icon' src={BagIcon} alt='Bag Icon' />
-							<span className='tos__services_line'></span>
-							{t('tos_site')}
-							<span className='tos__services_line second'></span>
-						</p>
-						<p className='tos__services_service'>
-							<img className='tos__services_icon' src={DocumentIcon} alt='Document Icon' />
-							<span className='tos__services_line'></span>
-							{t('tos_landing')}
-							<span className='tos__services_line second'></span>
-						</p>
-						<p className='tos__services_service'>
-							<img className='tos__services_icon' src={UXIcon} alt='UX Icon' />
-							<span className='tos__services_line'></span>
-							{t('tos_uiux')}
-							<span className='tos__services_line second'></span>
-						</p>
-						<p className='tos__services_service'>
-							<img className='tos__services_icon' src={MarketingIcon} alt='Marketing Icon' />
-							<span className='tos__services_line'></span>
-							{t('tos_marketing')}
-							<span className='tos__services_line second'></span>
-						</p>
-						<div className='tos__services_shadow'>
+					<p className='tos__services_service'>
+						<img className='tos__services_icon' src={WebIcon} alt='Web Icon' />
+						<span className='tos__services_line'></span>
+						{t('tos_web')}
+						<span className='tos__services_line second'></span>
+					</p>
+					<p className='tos__services_service'>
+						<img className='tos__services_icon' src={MobileIcon} alt='Mobile Icon' />
+						<span className='tos__services_line'></span>
+						{t('tos_mobile')}
+						<span className='tos__services_line second'></span>
+					</p>
+					<p className='tos__services_service'>
+						<img className='tos__services_icon' src={BagIcon} alt='Bag Icon' />
+						<span className='tos__services_line'></span>
+						{t('tos_site')}
+						<span className='tos__services_line second'></span>
+					</p>
+					<p className='tos__services_service'>
+						<img className='tos__services_icon' src={DocumentIcon} alt='Document Icon' />
+						<span className='tos__services_line'></span>
+						{t('tos_landing')}
+						<span className='tos__services_line second'></span>
+					</p>
+					<p className='tos__services_service'>
+						<img className='tos__services_icon' src={UXIcon} alt='UX Icon' />
+						<span className='tos__services_line'></span>
+						{t('tos_uiux')}
+						<span className='tos__services_line second'></span>
+					</p>
+					<p className='tos__services_service'>
+						<img className='tos__services_icon' src={MarketingIcon} alt='Marketing Icon' />
+						<span className='tos__services_line'></span>
+						{t('tos_marketing')}
+						<span className='tos__services_line second'></span>
+					</p>
+					<div className='tos__services_shadow'>
 
-						</div>
 					</div>
 				</div>
 				<div className='tos__imageblock'>
@@ -67,17 +65,17 @@ const TimelineOurServices = () => {
 			</div>
 
 			<div className='tos__infoblock'>
+				<h4 className='sub1 tos__infoblock_sub'>
+					{t('tos_sub1')}
+				</h4>
 				<div>
-					<h4 className='sub1 tos__infoblock_sub'>
-						{t('tos_sub1')}
-					</h4>
 					<p className='text tos__infoblock_text'>
 						{t('tos_text')}
 					</p>
+					<button onClick={() => navigate('/contacts')} className='primary-btn tos__infoblock_btn'>
+						{t('tos_btn')}
+					</button>
 				</div>
-				<button onClick={() => navigate('/contacts')} className='primary-btn tos__infoblock_btn'>
-					{t('tos_btn')}
-				</button>
 			</div>
 		</div>
 	)

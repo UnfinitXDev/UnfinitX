@@ -2,74 +2,66 @@
     position: sticky;
     top: 0;
     left: 0;
-    display: flex;
     background-color: $main-violet;
     z-index: 9999;
-    flex-direction: column;
-    justify-content: space-between;
     height: 100vh;
-    width: 240px;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-bottom: 40px;
+    width: 12.5vw;
+    padding-top: 4.27vh;
+    padding-bottom: 5.775vh;
     border-right: 1px solid $light-violet;
     box-shadow: 16px 0px 46px 0px rgba(0, 0, 0, 0.32);
-    @media (max-width: 1440px) {
-        padding-left: 24px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0 10%;
     }
-    @media (max-width: 1280px) {
-        padding-top: 24px;
-    }
-    @media (max-width: 1024px) {
-        padding-top: 24px;
-    }
+
     &__menu {
-        padding-left: 32px;
+        padding-left: 1.66vw;
+        margin-bottom: 31.44vh;
         &_link {
             display: block;
             font-family: "Anonymous Pro", monospace;
-            font-size: 20px;
+            font-size: 1.04vw;
             font-weight: 700;
             text-decoration: none;
             text-transform: uppercase;
             color: $white;
             position: relative;
             opacity: 0.48;
-            letter-spacing: 1.6px;
+            letter-spacing: 0.08vw;
             &::before {
                 content: "";
                 position: absolute;
-                width: 16px;
+                width: 0.8333vw;
                 height: 1px;
                 background-color: $white;
-                left: -32px;
+                left: -1.66vw;
                 top: 50%;
             }
             &.active {
                 opacity: 1;
-                font-size: 24px;
+                font-size: 1.25vw;
                 letter-spacing: 1.96px;
                 text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
             }
             &:not(:last-child) {
-                margin-bottom: 2vh;
+                margin-bottom: 3.42vh;
             }
         }
     }
 
     &__logo {
-        margin-bottom: 40px;
-        width: 100px;
-        @media (max-width: 1280px) {
-            margin-bottom: 40px;
-        }
+        width: 55%;
+        margin-bottom: 9.82vh;
         &_img {
             display: block;
             object-fit: cover;
             width: 100%;
         }
     }
-
 }
 
 :lang(am) {
