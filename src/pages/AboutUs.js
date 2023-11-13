@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next"
 import { useNavigate } from "react-router-dom"
+import TeamImage from '../assets/img/aboutus.png'
 
 const AboutUs = () => {
 	const { t } = useTranslation()
@@ -14,9 +15,6 @@ const AboutUs = () => {
 			<h1 className="heading aboutus__heading">
 				{t('aboutus__heading')}
 			</h1>
-			<h2 className="heading2 aboutus__tablet_subheading">
-				{t('aboutus__subheading')}
-			</h2>
 			<div className="aboutus__wrapper">
 				<div className="aboutus__infoblock">
 					<h2 className="heading2 aboutus__infoblock_subheading">
@@ -24,19 +22,6 @@ const AboutUs = () => {
 					</h2>
 					<p dangerouslySetInnerHTML={createText()} className="text aboutus__infoblock_text">
 					</p>
-					<div className="video mobile">
-						<div className="video-responsive">
-							<iframe
-								width="760"
-								height="450"
-								src={'https://www.youtube.com/embed/Giewsnm3vog'}
-								frameBorder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowFullScreen
-								title="Embedded youtube"
-							/>
-						</div>
-					</div>
 					<button
 						onClick={() => handleButtonClick()}
 						className="primary-btn aboutus__infoblock_btn"
@@ -44,19 +29,10 @@ const AboutUs = () => {
 						{t('aboutus__btn')}
 					</button>
 				</div>
-				<div className="video">
-					<div className="video-responsive">
-						<iframe
-							width="760"
-							height="450"
-							src={'https://www.youtube.com/embed/Giewsnm3vog'}
-							frameBorder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowFullScreen
-							title="Embedded youtube"
-						/>
-					</div>
+				<div className="aboutus__imageblock">
+					<img src={TeamImage} alt="Team" />
 				</div>
+
 
 				<div className="aboutus__customer">
 					<h2 className="heading2 aboutus__customer_heading2">
@@ -73,12 +49,6 @@ const AboutUs = () => {
 					</p>
 				</div>
 			</div>
-			<button
-				onClick={() => handleButtonClick()}
-				className="primary-btn aboutus__tablet_btn"
-			>
-				{t('aboutus__btn')}
-			</button>
 		</div>
 	)
 }
