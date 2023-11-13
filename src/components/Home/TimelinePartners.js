@@ -1,10 +1,5 @@
 import Robot from '../../assets/img/tpartners.png'
-import DavKeramika from '../../assets/img/davkeramika.svg'
-import CapitalCity from '../../assets/img/capitalcity.png'
-import NurseLink from '../../assets/img/nurselink.png'
-import Canon from '../../assets/img/canon.png'
-import Amazon from '../../assets/img/amazon.png'
-import MoneyCat from '../../assets/img/moneycat.svg'
+import Partners from '../../assets/img/partners.webp'
 import { useTranslation } from 'react-i18next'
 
 
@@ -22,12 +17,7 @@ const TimelinePartners = () => {
                         {t('tp_text')}
                     </p>
                     <div className='tpartners__partners'>
-                        <img className='tpartners__partners_logo' src={DavKeramika} alt="Dav Keramika" />
-                        <img className='tpartners__partners_logo' src={CapitalCity} alt="Capital City" />
-                        <img className='tpartners__partners_logo' src={NurseLink} alt="Nurse Link" />
-                        <img className='tpartners__partners_logo' src={Canon} alt="Canon" />
-                        <img className='tpartners__partners_logo' src={Amazon} alt="Amazon" />
-                        <img className='tpartners__partners_logo' src={MoneyCat} alt="Money Cat" />
+                        <img src={Partners} alt='Partners' />
                     </div>
                 </div>
                 <div className='tpartners__imageblock'>

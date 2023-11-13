@@ -62,7 +62,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        gap: 40px;
+        gap: 2.083vw;
         width: 100%;
         height: 100%;
         margin-top: 10px;
@@ -71,19 +71,6 @@
         &::-webkit-scrollbar {
             display: none;
         }
-        @media (max-width: 1280px) {
-            gap: 24px;
-        }
-    }
-
-    @media (max-width: 1620px) {
-        // height: 796px;
-    }
-    @media (max-width: 1280px) {
-        // height: 580px;
-    }
-    @media (max-width: 1024px) {
-        // height: 630px;
     }
 }
 

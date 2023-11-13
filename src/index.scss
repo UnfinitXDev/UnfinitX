@@ -85,18 +85,9 @@ body {
     color: $white;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    font-size: 24px;
-    letter-spacing: 1.92px;
+    font-size: 1.25vw;
+    letter-spacing: 0.1vw;
     font-weight: 700;
-    @media (max-width: 1280px) {
-        font-size: 20px;
-        letter-spacing: 1.6px;
-    }
-    @media (max-width: 992px) {
-        font-size: 18px;
-        font-weight: 500;
-        letter-spacing: 1.44px;
-    }
 }
 
 .primary-btn {
@@ -118,7 +109,6 @@ body {
 @import "styles/timelineourservices";
 @import "styles/timelinewcs";
 @import "styles/timelinepartners";
-@import "styles/timelinecontacts";
 @import "styles/modal";
 @import "styles/aboutus";
 @import "styles/portfolio";

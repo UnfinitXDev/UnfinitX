@@ -2,100 +2,52 @@
     width: 90%;
     flex: 0 0 auto;
     position: relative;
-    border: 3px solid #fff;
-    border-radius: 32px;
-    padding-top: 80px;
-    padding-left: 80px;
+    border: 0.15625vw solid #fff;
+    border-radius: 1.6667vw;
+    padding: 8.556vh 0 0 4.16vw;
     height: 100%;
     display: flex;
     flex-direction: column;
-    @media (max-width: 1620px) {
-        padding-left: 40px;
-        padding-top: 40px;
-    }
-    @media (max-width: 1280px) {
-        padding-right: 24px;
-        padding-top: 24px;
-        padding-left: 24px;
-        border-radius: 20px;
-    }
-
     &__wrapper {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
     }
     &__heading {
-        margin-bottom: 40px;
-        @media (max-width: 1440px) {
-            margin-bottom: 24px;
-        }
+        margin-bottom: 4.27vh;
     }
     &__infoblock {
-        width: 60%;
-        @media (max-width: 1280px) {
-            width: 100%;
-        }
+        flex: 0 0 43.177vw;
     }
 
     &__imageblock {
-        position: absolute;
-        right: 0px;
-        width: 590px;
-        top: 10%;
+        flex: 0 0 30.15625vw;
+        margin-top: -8.5vh;
+        margin-left: -4vw;
         img {
             display: block;
             object-fit: contain;
             width: 100%;
             height: 100%;
         }
-        @media (max-width: 1440px) {
-            width: 480px;
-            top: 22%;
-        }
-        @media (max-width: 1280px) {
-            width: 400px;
-            top: -20px;
-        }
-        @media (max-width: 1024px) {
-            width: 340px;
-            height: 340px;
-            right: -20px;
-            top: 0;
-        }
     }
 
     &__options {
         display: flex;
         flex-direction: column;
-        gap: 24px;
-        & > .twcs__option:first-child p,
-        & > .twcs__option:nth-child(2) p {
-            @media (max-width: 1280px) {
-                width: 65%;
-            }
-        }
+        row-gap: 4.27vh;
     }
     &__option {
         width: 100%;
-        @media (max-width: 1620px) {
-            width: 95%;
-        }
+
         &_sub2 {
-            margin-bottom: 8px;
-            line-height: 1;
+            margin-bottom: 0.855vh;
         }
         &_text {
+            text-align: justify;
             width: 100%;
-            font-size: 20px;
-            letter-spacing: 0.8px;
-            @media (max-width: 1620px) {
-                width: 95%;
-            }
-            @media (max-width: 1280px) {
-                font-size: 16px;
-                letter-spacing: 1px;
-            }
+            font-size: 1.04vw;
+            letter-spacing: 0.04vw;
         }
     }
 }

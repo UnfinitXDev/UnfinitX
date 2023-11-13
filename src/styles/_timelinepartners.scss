@@ -3,20 +3,9 @@
     height: 100%;
     flex: 0 0 auto;
     position: relative;
-    border: 3px solid #fff;
-    border-radius: 32px;
-    padding-top: 80px;
-    padding-left: 80px;
-    padding-bottom: 50px;
-    @media (max-width: 1620px) {
-        padding-left: 40px;
-        padding-top: 40px;
-    }
-    @media (max-width: 1280px) {
-        padding-top: 24px;
-        padding-left: 24px;
-        border-radius: 20px;
-    }
+    border: 0.15625vw solid #fff;
+    border-radius: 1.6667vw;
+    padding: 8.556vh 0 0 4.16vw;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -24,68 +13,37 @@
     &__infoblock {
         display: flex;
         flex-direction: column;
+        flex: 0 0 38.958vw;
         &_heading {
-            margin-bottom: 80px;
-            @media (max-width: 1620px) {
-                margin-bottom: 40px;
-            }
-            @media (max-width: 1280px) {
-                margin-bottom: 24px;
-            }
+            margin-bottom: 2.56vh;
         }
         &_text {
-            width: 50%;
-            margin-bottom: 80px;
-            @media (max-width: 1620px) {
-                width: 55%;
-                margin-bottom: 24px;
-            }
-            @media (max-width: 1024px) {
-                width: 75%;
-            }
+            font-size: 1.04vw;
+            text-align: justify;
+            letter-spacing: 0.083vw;
+            margin-bottom: 4.919vh;
         }
     }
     &__partners {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        gap: 30px 80px;
-        width: 50%;
-        @media (max-width: 1620px) {
-            flex-direction: column;
-        }
-        @media (max-width: 1280px) {
-            flex-direction: row;
-            width: 70%;
-            gap: 24px 16px;
-        }
-        @media (max-width: 1024px) {
-            // flex-direction: column;
-            // gap: 8px;
+        border: 0.15625vw solid #fff;
+        border-radius: 0.83vw;
+        padding: 0.98vw;
+        img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
     }
 
     &__imageblock {
-        position: absolute;
-        right: 0;
-        @media (max-width: 1620px) {
-            top: 80px;
-        }
-        @media (max-width: 1280px) {
-            width: 425px;
-            height: 425px;
-        }
-        @media (max-width: 1024px) {
-            width: 400px;
-            height: 400px;
-            top: unset;
-            bottom: 60px;
-            right: -48px;
-        }
+        flex: 0 0 33.4375vw;
+        height: 33.4375vw;
+        margin-top: -5vh;
         img {
-            width: 100%;
             display: block;
             object-fit: cover;
+            width: 100%;
             height: 100%;
         }
     }
