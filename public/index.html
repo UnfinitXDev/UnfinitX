@@ -6,7 +6,7 @@
 	<link rel="icon" href="%PUBLIC_URL%/logo.svg" />
 	<meta name="viewport"
 		content="width=device-width, viewport-fit=cover, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-	<meta name="theme-color" content="#000000" />
+	<meta name="theme-color" content="#0C0758" />
 	<meta name="description" content="UnfinitX IT Company" />
 	<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.svg" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,12 +25,14 @@
 		const body = document.querySelector('body')
 		window.addEventListener('load', () => {
 			body.style.width = window.innerWidth + 'px'
-			body.style.height = window.innerHeight	+ 'px'		 
+			body.style.height = window.innerHeight + 'px'
 		})
-		// window.addEventListener('resize', () => {
-		// 	body.style.width = window.innerWidth + 'px'
-		// 	body.style.height = window.innerHeight	+ 'px'		 
-		// })
+		window.addEventListener('resize', () => {
+			if (screen.orientation.type.includes('landscape')) {
+				body.style.width = window.innerWidth + 'px'
+				body.style.height = window.innerHeight + 'px'
+			}
+		})
 	</script>
 </body>
 
