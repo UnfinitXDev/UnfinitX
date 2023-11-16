@@ -12,7 +12,6 @@ const Modal = ({ heading, text, cost, close }) => {
 
     return (
         <div className="modal">
-
             <div onClick={close} className="modal__background"></div>
             <div className="modal__body">
                 <button onClick={close} className="modal__close">

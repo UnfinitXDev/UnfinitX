@@ -1,0 +1,46 @@
+.imagewlines {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_gradient {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 18.2vw;
+        height: 100%;
+        background: linear-gradient(266deg, #0c0758 16.27%, rgba(12, 7, 88, 0) 104.47%);
+        &[data-position="left"] {
+            left: 0;
+            transform: rotate(180deg);
+        }
+        &[data-position="right"] {
+            right: 0;
+        }
+    }
+    &_lines {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        z-index: 0;
+        justify-content: space-between;
+        top: 3.31vh;
+        span {
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: rgba(217, 217, 217, 0.2);
+        }
+    }
+    &_img {
+        width: 71.17%;
+        z-index: 4;
+        img {
+            display: block;
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+}

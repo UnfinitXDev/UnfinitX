@@ -14,12 +14,18 @@ body {
     background-color: $main-violet;
     height: 100vh;
     overflow: hidden;
+    @media screen and (orientation: portrait) {
+        overflow-y: auto;
+    }
 }
 
 .gen-wrapper {
-    @media (min-width: 993px) {
+    @media screen and (orientation: landscape) {
         display: flex;
         position: relative;
+    }
+    @media screen and (orientation: portrait) {
+        margin-inline: 8px;
     }
 }
 
@@ -42,10 +48,9 @@ body {
     font-weight: 900;
     text-align: left;
     letter-spacing: 0.2vw;
-    @media (max-width: 992px) {
-        text-align: center;
-        font-size: 24px;
-        letter-spacing: 2.4px;
+    @media screen and (orientation: portrait) {
+        font-size: 3.55vh;
+        letter-spacing: 0.61vw;
     }
 }
 
@@ -55,8 +60,13 @@ body {
     font-weight: 400;
     line-height: normal;
     font-size: 1.04vw;
-    letter-spacing: .08vw;
+    letter-spacing: 0.08vw;
     text-align: justify;
+    @media screen and (orientation: portrait) {
+        font-size: 1.65vh;
+        letter-spacing: normal;
+        line-height: 1.2;
+    }
 }
 
 .sub1 {
@@ -68,6 +78,10 @@ body {
     line-height: normal;
     letter-spacing: 0.13vw;
     text-transform: uppercase;
+    @media screen and (orientation: portrait) {
+        font-size: 2.36vh;
+        letter-spacing: 0.41vw;
+    }
 }
 
 .sub2 {
@@ -77,6 +91,10 @@ body {
     font-size: 1.25vw;
     letter-spacing: 0.1vw;
     font-weight: 700;
+    @media screen and (orientation: portrait) {
+        font-size: 2.13vh;
+        letter-spacing: 0.17vw;
+    }
 }
 
 .primary-btn {
@@ -91,6 +109,12 @@ body {
     padding: 1.25vw 1.66vw;
     font-size: 1.25vw;
     border-radius: 0.833vw;
+    @media screen and (orientation: portrait) {
+        font-size: 2.36vh;
+        letter-spacing: normal;
+        padding: 1.89vh 3.79vh;
+        border-radius: 1.18vh;
+    }
 }
 
 @import "styles/sidebar";
@@ -99,6 +123,7 @@ body {
 @import "styles/timelinewcs";
 @import "styles/timelinepartners";
 @import "styles/modal";
+@import "styles/imagewlines";
 @import "styles/aboutus";
 @import "styles/portfolio";
 @import "styles/contacts";
@@ -110,62 +135,5 @@ body {
 :lang(am) {
     * {
         font-family: "Arial", sans-serif !important;
-    }
-
-    .heading {
-        font-weight: 700;
-        @media (max-width: 1620px) {
-            font-size: 64px;
-            line-height: normal;
-            letter-spacing: 5.12px;
-        }
-        @media (max-width: 1280px) {
-            font-size: 40px;
-            line-height: normal;
-            letter-spacing: 3.2px;
-        }
-        @media (max-width: 992px) {
-            font-size: 32px;
-            letter-spacing: 1.4px;
-        }
-        @media (max-width: 600px) {
-            font-size: 20px;
-            letter-spacing: 0.8px;
-        }
-    }
-    .heading2 {
-        font-weight: 700;
-        @media (max-width: 1280px) {
-            font-size: 32px;
-            letter-spacing: 2.56px;
-        }
-        @media (max-width: 992px) {
-            font-size: 24px;
-            letter-spacing: 2.4px;
-        }
-    }
-}
-
-:lang(ru) {
-    .heading {
-        font-weight: 700;
-        @media (max-width: 1620px) {
-            font-size: 64px;
-            line-height: normal;
-            letter-spacing: 5.12px;
-        }
-        @media (max-width: 1280px) {
-            font-size: 40px;
-            line-height: normal;
-            letter-spacing: 3.2px;
-        }
-        @media (max-width: 992px) {
-            font-size: 32px;
-            letter-spacing: 1.4px;
-        }
-        @media (max-width: 600px) {
-            font-size: 20px;
-            letter-spacing: 0.8px;
-        }
     }
 }

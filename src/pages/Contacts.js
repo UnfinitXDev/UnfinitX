@@ -74,10 +74,10 @@ const Contacts = () => {
 					</div>
 					<div className="contacts__infoblock infoblock">
 						<div className="infoblock__item">
-							<p className="infoblock__item_address">
+							<a href="https://maps.app.goo.gl/D3BoJJgvte9HURDc6" rel="noreferrer" target="_blank" className="infoblock__item_link">
 								{t('contacts_address_am')}
 								<LocationOnIcon />
-							</p>
+							</a>
 							<a
 								className="infoblock__item_link"
 								href="tel:+37433339616"
@@ -87,10 +87,11 @@ const Contacts = () => {
 							</a>
 						</div>
 						<div className="infoblock__item">
-							<p className="infoblock__item_address">
+							<a href='https://maps.app.goo.gl/6Zp4KN2AArwG1XRV8' rel="noreferrer" target="_blank" className="infoblock__item_link">
+
 								{t('contacts_address_us')}
 								<LocationOnIcon />
-							</p>
+							</a>
 							<a
 								className="infoblock__item_link"
 								href="tel:+13303031323"

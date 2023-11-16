@@ -14,12 +14,12 @@
         //     position: relative;
         //     height: fit-content;
 
-        //     @media (max-width: 992px) {
+        //     @media screen and (orientation: portrait) {
         //         display: none;
         //     }
         //     &.mobile {
         //         display: none;
-        //         @media (max-width: 992px) {
+        //         @media screen and (orientation: portrait) {
         //             display: block;
         //             width: 100%;
         //         }
@@ -145,7 +145,7 @@
 
     &__customer {
         display: none;
-        @media (max-width: 992px) {
+        @media screen and (orientation: portrait) {
             display: block;
             padding: 16px 12px 24px 16px;
             border: 2px solid #fff;
@@ -174,7 +174,7 @@
 :lang(am) {
     .aboutus {
         width: calc(100% - 260px);
-        @media (max-width: 992px) {
+        @media screen and (orientation: portrait) {
             width: 100%;
         }
 
@@ -184,18 +184,9 @@
                 margin-bottom: 40px;
             }
         }
-        &__wrapper {
-            .video {
-                &::before {
-                    @media (max-width: 1024px) {
-                        left: -20px;
-                    }
-                }
-            }
-        }
         &__customer {
             &_heading2 {
-                @media (max-width: 992px) {
+                @media screen and (orientation: portrait) {
                     font-size: 20px !important;
                     letter-spacing: 1.6px;
                 }

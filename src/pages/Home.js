@@ -4,7 +4,7 @@ import Mobile from "../components/Home/Mobile"
 
 const Home = () => {
 	const matches = useMediaQuery({
-		query: '(min-width: 993px)'
+		query: '(orientation: landscape)'
 	})
 	
 	return matches

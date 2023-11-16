@@ -1,24 +1,24 @@
 .header {
-    padding-block: 8px;
-    margin: 0px 16px 20px;
+    padding: 8px;
+    margin: 0px -8px 1.895vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 9999;
-    background-color:$main-violet;
-    transition: positions .4s ease;
+    background-color: $main-violet;
+    transition: positions 0.4s ease;
+    border-bottom: 1px solid rgba(77, 97, 154, 0.24);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.32);
+    backdrop-filter: blur(2px);
     &__mobile_logo {
-        img {
-            height: 50px;
-        }
     }
     .burger {
         background-color: $dark-violet;
         box-shadow: 48px 25px 16px 56px rgba(0, 0, 0, 0.16);
         padding: 16px 16px 24px 24px;
-        
+
         &__logo {
             height: 60px;
             width: 60px;

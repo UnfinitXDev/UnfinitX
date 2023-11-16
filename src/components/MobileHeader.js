@@ -1,4 +1,4 @@
-import Logo from '../assets/img/logo.svg'
+import Logo from '../assets/img/mobile_logo.svg'
 
 import { slide as Menu } from 'react-burger-menu'
 import MenuIcon from '@mui/icons-material/Menu';
