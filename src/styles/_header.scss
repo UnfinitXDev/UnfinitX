@@ -42,9 +42,8 @@
                 font-weight: 700;
                 text-decoration: none;
                 text-transform: uppercase;
-                color: $white;
+                color: rgba($white, 0.48);
                 position: relative;
-                opacity: 0.48;
                 display: flex;
                 align-items: center;
                 gap: 1.35vh;
@@ -58,7 +57,7 @@
                     background-color: $white;
                 }
                 &.active {
-                    opacity: 1;
+                    color: $white;
                     font-size: 2.01vh;
                     letter-spacing: 0.35vw;
                     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
