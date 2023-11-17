@@ -64,25 +64,3 @@
     }
 }
 
-:lang(am) {
-    .sidebar {
-        width: 260px;
-        padding-left: 24px;
-
-        &__menu {
-            padding-left: 16px;
-            &_link {
-                font-size: 16px;
-                letter-spacing: 0.64px;
-                &::before {
-                    width: 8px;
-                    left: -16px;
-                }
-                &.active {
-                    font-size: 18px;
-                    letter-spacing: 0.72px;
-                }
-            }
-        }
-    }
-}

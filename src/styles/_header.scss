@@ -15,100 +15,113 @@
     &__mobile_logo {
     }
     .burger {
-        background-color: $dark-violet;
-        box-shadow: 48px 25px 16px 56px rgba(0, 0, 0, 0.16);
-        padding: 16px 16px 24px 24px;
-
+        background-color: $main-violet;
+        border-left: 1px solid #4d619a;
+        box-shadow: -8px 0px 32px 0px rgba(0, 0, 0, 0.32);
         &__logo {
-            height: 60px;
-            width: 60px;
-            margin-bottom: 54px;
+            height: 9vh;
+            width: 8.29vh;
+            margin-bottom: 6.04vh;
             img {
                 display: block;
                 width: 100%;
+                height: 100%;
                 object-fit: contain;
             }
         }
         &__menu {
+            position: relative; 
+            flex: 1;
+            display: flex !important;
+            flex-direction: column;
             &_link {
                 display: block;
                 font-family: "Anonymous Pro", monospace;
-                font-size: 24px;
+                font-size: 1.65vh;
+                letter-spacing: 0.28vw;
                 font-weight: 700;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $white;
                 position: relative;
                 opacity: 0.48;
-                letter-spacing: 1.92px;
                 display: flex;
                 align-items: center;
-                gap: 16px;
-                @media (max-width: 992px) {
-                    font-size: 16px;
-                }
+                gap: 1.35vh;
                 span {
-                    width: 16px;
+                    width: 1.35vh;
                     height: 2px;
                     display: block;
                     background-color: $white;
                 }
                 &.active {
                     opacity: 1;
-                    font-size: 24px;
-                    letter-spacing: 1.96px;
+                    font-size: 2.01vh;
+                    letter-spacing: 0.35vw;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
                     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-                    @media (max-width: 992px) {
-                        font-size: 20px;
-                    }
                 }
                 &:not(:last-child) {
                     margin-bottom: 32px;
-                    @media (max-width: 992px) {
-                        margin-bottom: 20px;
-                    }
                 }
+            }
+            &_gradient {
+                position: absolute;
+                height: 100%;
+                width: 31.8%;
+                top: 0;
+                z-index: 99999;
+                background: linear-gradient(266deg, #0C0758 16.27%, rgba(12, 7, 88, 0.00) 104.47%);
+                // background-color: red;
+                &[data-position='left'] {
+                    left: -1.89vh;
+                    transform: rotate(-180deg);
+                }
+                &[data-position='right'] {
+                    right: -1.89vh;
+                }
+
+            }
+            &_lines {
+                display: flex;
+                flex-direction: column;
+                // gap: 10vh;
+                height: 100%;
+                justify-content: space-between;
+                flex: 1;
+            }
+            &_line {
+                background-color: #fff;
+                width: 100%;
+                height: 1px;
+                display: block;
             }
         }
         &-languages {
             margin-top: 48px;
         }
     }
-    .bm-burger-button {
-        width: 30px;
-        height: 30px;
-        color: $white;
-        position: relative;
-    }
-    .bm-cross-button {
-        color: $white;
-        width: 30px !important;
-        height: 30px !important;
-    }
-    .bm-menu-wrap {
-        top: 0;
-    }
-}
-
-:lang(am) {
-    .bm-menu-wrap {
-        width: 260px !important;
-    }
-    .page__heading {
-        font-size: 20px;
-        letter-spacing: 0.8px;
-    }
-    .burger {
-        &__menu {
-            &_link {
-                font-size: 16px;
-                letter-spacing: normal;
-                gap: 8px;
-                &.active {
-                    font-size: 18px;
-                    letter-spacing: normal;
-                }
-            }
+    .bm {
+        &-item-list {
+            display: flex;
+            flex-direction: column;
+        }
+        &-burger-button {
+            width: 30px;
+            height: 30px;
+            color: $white;
+            position: relative;
+        }
+        &-cross-button {
+            color: $white;
+            width: 30px !important;
+            height: 30px !important;
+        }
+        &-menu-wrap {
+            top: 0;
+            height: 100vh !important;
+            padding: 0.94vh 1.89vh;
         }
     }
 }
+

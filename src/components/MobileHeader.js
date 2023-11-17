@@ -1,5 +1,5 @@
 import Logo from '../assets/img/mobile_logo.svg'
-
+import BurgerLogo from '../assets/img/logo.svg'
 import { slide as Menu } from 'react-burger-menu'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -14,21 +14,30 @@ const MobileHeader = () => {
     const { t } = useTranslation();
     const location = useLocation()
 
+    const lines = []
+    let initialOpacity = 30
+    for (let i=0; i < 6; i++) {
+        lines.push(<span style={{opacity: `${initialOpacity}%`}} className='burger__menu_line'></span>)
+        initialOpacity -= 5
+    }
+
     return (
         <header className='header'>
 
             {
                 location.pathname === '/'
-                ?   <Link className='header__mobile_logo' to={'/'} style={{display: 'flex', alignItems: 'center'}}>
+                    ? <Link className='header__mobile_logo' to={'/'} style={{ display: 'flex', alignItems: 'center' }}>
                         <img src={Logo} alt='UnfinitX Logo' />
                     </Link>
-                : <h1 className='heading page__heading'>{t(location.pathname.slice(1) + '_mobile_heading')}</h1>
+                    : <h1 className='heading page__heading'>{t(location.pathname.slice(1) + '_mobile_heading')}</h1>
             }
-            <Menu className='burger'  right width={240} customBurgerIcon={<MenuIcon />} customCrossIcon={<CloseIcon />}>
+            <Menu className='burger' right width={'50%'} customBurgerIcon={<MenuIcon />} customCrossIcon={<CloseIcon />}>
                 <Link to='/' className='burger__logo'>
-                    <img src={Logo} alt='UnfinitX logo' />
+                    <img src={BurgerLogo} alt='UnfinitX logo' />
                 </Link>
                 <div className='burger__menu'>
+                    <div className='burger__menu_gradient' data-position='left'></div>
+
                     <NavLink
                         to={'/'}
                         className={({ isActive }) =>
@@ -38,16 +47,6 @@ const MobileHeader = () => {
                         <span className="burger__prefix"></span>
                         {t('home')}
                     </NavLink>
-
-                    <NavLink
-                        to={'/services'}
-                        className={({ isActive }) =>
-                            isActive ? "burger__menu_link active" : "burger__menu_link"
-                        }>
-                        <span className="burger__prefix"></span>
-                        {t('services')}
-                    </NavLink>
-
                     <NavLink
                         to={'/aboutus'}
                         className={({ isActive }) =>
@@ -74,8 +73,10 @@ const MobileHeader = () => {
                         <span className="burger__prefix"></span>
                         {t('contacts')}
                     </NavLink>
-
-
+                    <div className='burger__menu_lines'>
+                        {lines}
+                    </div>
+                    <div className='burger__menu_gradient' data-position='right'></div>
                 </div>
                 <Socials />
                 <Languages wrapperClassName={'burger-languages'} />
