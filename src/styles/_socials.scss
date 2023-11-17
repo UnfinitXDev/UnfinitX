@@ -1,18 +1,32 @@
 .social {
     display: grid;
     grid-template-columns: repeat(4, 1.45vw);
-    border: 1.165px solid #FFF;
+    border: 1.165px solid #fff;
     border-radius: 0.72vw;
     padding: 0.48vw 0.6vw;
     gap: 1.99vh;
     margin-bottom: 2.88vh;
+    @media screen and (orientation: portrait) {
+        grid-template-columns: repeat(4, 2.84vh);
+        padding: 0.94vh 1.18vh;
+        gap: 1.89vh;
+        border-radius: 1.42vh;
+        margin-bottom: 2.84vh;
+    }
     &__link {
         width: fit-content;
         & > img,
         & > svg {
-            width: 1.4vw;
-            height: 1.4vw;
-            font-size: 1.4vw;
+            @media screen and (orientation: landscape) {
+                width: 1.4vw;
+                height: 1.4vw;
+                font-size: 1.4vw;
+            }
+            @media screen and (orientation: portrait) {
+                width: 2.36vh;
+                height: 2.36vh;
+                font-size: 2.36vh;
+            }
         }
     }
 }

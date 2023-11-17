@@ -2,9 +2,14 @@
     display: flex;
     width: 100%;
     align-items: flex-start;
-    border: 0.06vw solid #FFF;
+    border: 0.06vw solid #fff;
     border-radius: 0.72vw;
     padding: 1.49vh 0.97vw;
+    justify-content: space-between;
+    @media screen and (orientation: portrait) {
+        padding: 1.42vh 1.89vh;
+        border-radius: 1.42vh;
+    }
     &__btn {
         font-family: Arial;
         font-size: 0.83vw;
@@ -23,8 +28,5 @@
             border-bottom: 2px solid $white;
         }
 
-        &:not(:last-child) {
-            margin-right: 1.33vw;
-        }
     }
 }
