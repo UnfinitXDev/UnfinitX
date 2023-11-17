@@ -13,19 +13,19 @@
     &__btn {
         font-family: Arial;
         font-size: 0.83vw;
-        font-weight: 700;
+        font-weight: 400;
         text-transform: uppercase;
         background-color: transparent;
         border: none;
         color: $white;
         cursor: pointer;
-        @media (max-width: 992px) {
-            font-size: 16px;
+        @media screen and (orientation: portrait){
+            font-size: 1.65vh;
         }
-
         &.active {
+            font-weight: 700;
             padding-bottom: 0.21vh;
-            border-bottom: 2px solid $white;
+            border-bottom: 1px solid $white;
         }
 
     }
