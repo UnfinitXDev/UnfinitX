@@ -15,7 +15,8 @@
     &__mobile_logo {
     }
     .burger {
-        background-color: $main-violet;
+        background-color: rgba($main-violet, 0.95);
+        backdrop-filter: blur(2px);
         border-left: 1px solid #4d619a;
         box-shadow: -8px 0px 32px 0px rgba(0, 0, 0, 0.32);
         &__logo {
