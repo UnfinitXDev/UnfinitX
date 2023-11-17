@@ -1,5 +1,5 @@
 import Logo from '../assets/img/mobile_logo.svg'
-import BurgerLogo from '../assets/img/logo.svg'
+import BurgerLogo from '../assets/img/burger_logo.svg'
 import { slide as Menu } from 'react-burger-menu'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
