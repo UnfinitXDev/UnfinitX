@@ -7,7 +7,7 @@
     gap: 1.99vh;
     margin-bottom: 2.88vh;
     @media screen and (orientation: portrait) {
-        grid-template-columns: repeat(4, 2.84vh);
+        grid-template-columns: repeat(4, 1fr);
         padding: 0.94vh 1.18vh;
         gap: 1.89vh;
         border-radius: 1.42vh;
