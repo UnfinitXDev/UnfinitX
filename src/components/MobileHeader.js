@@ -15,10 +15,10 @@ const MobileHeader = () => {
     const location = useLocation()
 
     const lines = []
-    let initialOpacity = 30
-    for (let i=0; i < 8; i++) {
+    let initialOpacity = 35
+    for (let i=0; i < 10; i++) {
         lines.push(<span style={{opacity: `${initialOpacity}%`}} className='burger__menu_line'></span>)
-        initialOpacity -= 3.75
+        initialOpacity -= 3.5
     }
 
     return (
