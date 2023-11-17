@@ -23,7 +23,6 @@ const MobileHeader = () => {
 
     return (
         <header className='header'>
-
             {
                 location.pathname === '/'
                     ? <Link className='header__mobile_logo' to={'/'} style={{ display: 'flex', alignItems: 'center' }}>

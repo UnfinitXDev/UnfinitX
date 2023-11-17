@@ -48,6 +48,8 @@
                 display: flex;
                 align-items: center;
                 gap: 1.35vh;
+                padding-bottom: 0.3vh;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
                 span {
                     width: 1.35vh;
                     height: 2px;
@@ -58,11 +60,10 @@
                     opacity: 1;
                     font-size: 2.01vh;
                     letter-spacing: 0.35vw;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
                     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
                 }
                 &:not(:last-child) {
-                    margin-bottom: 32px;
+                    margin-bottom: 2.36vh;
                 }
             }
             &_gradient {
@@ -119,7 +120,7 @@
         }
         &-menu-wrap {
             top: 0;
-            height: 100vh !important;
+            height: 100svh !important;
             padding: 0.94vh 1.89vh;
         }
     }
