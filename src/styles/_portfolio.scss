@@ -3,29 +3,49 @@
     padding-top: 4.16vw;
     padding-left: 4.16vw;
     padding-bottom: 5.56vh;
+    @media screen and (orientation: portrait) {
+        width: 100%;
+        padding: 0 8px;
+        margin-bottom: 2.89vh;
+    }
     &__heading {
         margin-bottom: 2.56vh;
+        @media screen and (orientation: portrait) {
+            display: none;
+        }
     }
     &__text {
-        width: 57.135vw;
-        font-size: 1.04vw;
-        letter-spacing: 0.08vw;
-        margin-bottom: 2.88vh;
+        @media screen and (orientation: landscape) {
+            width: 57.135vw;
+            font-size: 1.04vw;
+            letter-spacing: 0.08vw;
+            margin-bottom: 2.88vh;
+        }
+        @media screen and (orientation: portrait) {
+            letter-spacing: 0.28vw;
+            margin-bottom: 1.89vh;
+        }
     }
     &__tabs {
         display: flex;
-        gap: 3.125vw;
+        gap: 0 3.125vw;
+        @media screen and (orientation: portrait) {
+            flex-direction: column;
+            gap: 2.84vh 0;
+        }
         &_menu {
             display: flex;
             flex-direction: column;
             flex: 0 0 11.09vw;
-            @media (max-width: 992px) {
+            @media screen and (orientation: portrait) {
                 flex-direction: row;
+                flex: unset;
+                width: 100%;
                 overflow-x: scroll;
                 &::-webkit-scrollbar {
                     display: none;
                 }
-                gap: 24px;
+                gap: 6.15vw;
             }
             &.tabs {
                 .tab {
@@ -33,7 +53,7 @@
                     align-items: center;
                     color: $white;
                     opacity: 0.48;
-                    @media (max-width: 992px) {
+                    @media screen and (orientation: portrait) {
                         flex: 0 0 auto;
                     }
                     &__prefix {
@@ -41,7 +61,7 @@
                         flex: 0 0 0.833vw;
                         height: 1px;
                         background-color: $white;
-                        @media (max-width: 992px) {
+                        @media screen and (orientation: portrait) {
                             display: none;
                         }
                     }
@@ -61,14 +81,14 @@
                         cursor: pointer;
                         width: 100%;
                         text-align: left;
-                        @media (max-width: 992px) {
-                            font-size: 16px;
-                            letter-spacing: 1.28px;
+                        @media screen and (orientation: portrait) {
+                            font-size: 1.89vh;
+                            letter-spacing: 0.32vw;
                         }
                     }
                     &.active {
                         opacity: 1;
-                        @media (max-width: 992px) {
+                        @media screen and (orientation: portrait) {
                             padding-bottom: 4px;
                             border-bottom: 1px solid $white;
                         }
@@ -76,15 +96,15 @@
                             font-size: 1.25vw;
                             letter-spacing: 0.1vw;
                             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-                            @media (max-width: 992px) {
-                                font-size: 16px;
+                            @media screen and (orientation: portrait) {
+                                font-size: 1.89vh;
                                 letter-spacing: 1.28px;
                             }
                         }
                     }
                     &:not(:last-child) {
                         margin-bottom: 3.42vh;
-                        @media (max-width: 992px) {
+                        @media screen and (orientation: portrait) {
                             margin-bottom: 0;
                         }
                     }
@@ -110,22 +130,27 @@
                     pointer-events: none;
                 }
             }
-            @media (max-width: 992px) {
+            @media screen and (orientation: portrait) {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: unset;
-                gap: 8px;
+                gap: 0.94vh;
             }
             .project {
                 display: block;
                 border-radius: 0.83vw;
-                @media (max-width: 992px) {
-                    border-radius: 10px;
+                @media screen and (orientation: portrait) {
+                    border-radius: 1.18vh;
+                    height: 21.32vh;
                 }
                 &__image {
                     display: block;
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
+                    @media screen and (orientation: portrait) {
+                        object-fit: cover;
+                        border-radius: 1.18vh;
+                    }
                 }
             }
         }

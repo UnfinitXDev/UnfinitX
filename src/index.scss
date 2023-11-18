@@ -38,6 +38,9 @@ body {
     font-weight: 900;
     letter-spacing: 0.4vw;
     text-transform: uppercase;
+    @media screen and (orientation: portrait) {
+        font-size: 2.89vh;
+    }
 }
 
 .heading2 {

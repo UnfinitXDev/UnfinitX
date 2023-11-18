@@ -32,22 +32,12 @@ const AboutUs = () => {
 				<div className="aboutus__imageblock">
 					<img src={TeamImage} alt="Team" />
 				</div>
-
-
-				<div className="aboutus__customer">
-					<h2 className="heading2 aboutus__customer_heading2">
-						{t('aboutus_mobile_customer_heading')}
-					</h2>
-					<p className="aboutus__customer_point">
-						1. {t('aboutus_mobile_customer1')}
-					</p>
-					<p className="aboutus__customer_point">
-						2. {t('aboutus_mobile_customer2')}
-					</p>
-					<p className="aboutus__customer_point">
-						3. {t('aboutus_mobile_customer3')}
-					</p>
-				</div>
+				<button
+					onClick={() => handleButtonClick()}
+					className="primary-btn aboutus__btn"
+				>
+					{t('aboutus__btn')}
+				</button>
 			</div>
 		</div>
 	)
