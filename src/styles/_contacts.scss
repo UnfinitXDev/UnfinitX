@@ -1,158 +1,217 @@
-@media screen and (orientation: landscape) {
-    .contacts {
-        width: 87.5vw;
-        padding: 4.16vw;
-        &__wrapper {
-            display: flex;
-            position: relative;
-            justify-content: space-between;
-        }
-        &__heading {
-            margin-bottom: 2.56vh;
-        }
-
-        &__left {
-            flex: 0 0 45.3125vw;
-        }
-
-        &__text {
-            margin-bottom: 5.56vh;
-        }
-        &__form {
-            display: flex;
+.contacts {
+    width: 87.5vw;
+    padding: 4.16vw;
+    @media screen and (orientation: portrait) {
+        width: 100%;
+        padding: 1.89vh;
+        border: 1px solid #fff;
+        border-radius: 3.07vw;
+        margin-bottom: 2.89vh;
+    }
+    &__wrapper {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        @media screen and (orientation: portrait) {
             flex-direction: column;
-            width: 100%;
+        }
+    }
+    &__heading {
+        margin-bottom: 2.56vh;
+        @media screen and (orientation: portrait) {
+            display: none;
+        }
+    }
+
+    &__left {
+        flex: 0 0 45.3125vw;
+    }
+
+    &__text {
+        margin-bottom: 5.56vh;
+        @media screen and (orientation: portrait) {
+            letter-spacing: 0.28vw;
+            margin-bottom: 1.89vh;
+        }
+    }
+    &__mobile {
+        &_img {
+            @media screen and (orientation: landscape) {
+                display: none;
+            }
+            .imagewlines_img {
+                -moz-transform: scale(-1, 1);
+                -o-transform: scale(-1, 1);
+                -webkit-transform: scale(-1, 1);
+                transform: scale(-1, 1);
+            }
+            margin-bottom: 1.89vh;
+        }
+        &_heading {
+            @media screen and (orientation: landscape) {
+                display: none;
+            }
+            color: $white;
+            font-family: "Roboto", sans-serif;
+            font-size: 2.13vh;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 0.36vw;
+            text-transform: uppercase;
+            margin-bottom: 2.84vh;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @media screen and (orientation: portrait) {
+        }
+        &_input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding: 0.83vw;
+            border-bottom: 1px solid $white;
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            font-size: 1.04vw;
+            font-weight: 400;
+            letter-spacing: 0.083vw;
             @media screen and (orientation: portrait) {
-                margin-top: 16px;
-                margin-bottom: 24px;
-                order: 3;
+                padding: 0.95vh 1.89vh;
+                font-size: 1.89vh;
+                border-color: #6578b1;  
+                letter-spacing: 0.32vw;
             }
-            &_input {
-                background-color: transparent;
-                border: none;
-                outline: none;
-                padding: 0.83vw;
-                border-bottom: 1px solid $white;
-                color: #fff;
+            &::placeholder {
+                color: #9fb1e6;
                 font-family: "Roboto", sans-serif;
                 font-size: 1.04vw;
                 font-weight: 400;
                 letter-spacing: 0.083vw;
-                @media screen and (orientation: portrait) {
-                    padding: 8px 16px;
-                }
-                &::placeholder {
-                    color: #9fb1e6;
-                    font-family: "Roboto", sans-serif;
-                    font-size: 1.04vw;
-                    font-weight: 400;
-                    letter-spacing: 0.083vw;
-                    @media screen and (orientation: portrait) {
-                        font-size: 16px;
-                        letter-spacing: 1.28px;
-                    }
-                }
-                &:not(:last-of-type) {
-                    margin-bottom: 1.711vh;
-                    @media screen and (orientation: portrait) {
-                        margin-bottom: 8px;
-                    }
-                }
-                &:last-of-type {
-                    margin-bottom: 4.27vh;
-                }
-            }
-            &_textarea {
-                border: 1px solid $white;
-                border-radius: 0.625vw;
-                outline: none;
-                background-color: transparent;
-                padding: 0.625vw 0.625vw 12.83vh;
-                resize: none;
-                color: #fff;
-                font-family: "Roboto", sans-serif;
-                font-size: 1.04vw;
-                font-weight: 400;
-                letter-spacing: 0.083vw;
-                margin-bottom: 4.27vh;
                 @media screen and (orientation: portrait) {
                     font-size: 16px;
                     letter-spacing: 1.28px;
-                    margin-bottom: 16px;
-                }
-                &::placeholder {
-                    color: #9fb1e6;
-                    font-family: "Roboto", sans-serif;
-                    font-size: 1.04vw;
-                    font-weight: 400;
-                    letter-spacing: 0.083vw;
-                    @media screen and (orientation: portrait) {
-                        font-size: 16px;
-                        letter-spacing: 1.28px;
-                    }
                 }
             }
-            &_btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                column-gap: 0.83vw;
-                svg {
-                    font-size: 1.25vw;
+            &:not(:last-of-type) {
+                margin-bottom: 1.711vh;
+                @media screen and (orientation: portrait) {
+                    margin-bottom: 8px;
+                }
+            }
+            &:last-of-type {
+                margin-bottom: 4.27vh;
+                @media screen and (orientation: portrait) {
+                    margin-bottom: 1.89vh;
                 }
             }
         }
-
-        &__right {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: space-between;
-            flex: 0 0 24.479vw;
-            &_image {
-                width: 100%;
-                height: 24.479vw;
-                img {
-                    display: block;
-                    height: 100%;
-                    width: 100%;
-                    object-fit: contain;
+        &_textarea {
+            border: 1px solid $white;
+            border-radius: 0.625vw;
+            outline: none;
+            background-color: transparent;
+            padding: 0.625vw 0.625vw 12.83vh;
+            resize: none;
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            font-size: 1.04vw;
+            font-weight: 400;
+            letter-spacing: 0.083vw;
+            margin-bottom: 4.27vh;
+            @media screen and (orientation: portrait) {
+                font-size: 1.89vh;
+                letter-spacing: 0.32vw;
+                padding: 1.89vh 1.89vh 5.7vh;
+                border-color: #6578b1;
+                margin-bottom: 1.89vh;
+                border-radius: 1.42vh;
+            }
+            &::placeholder {
+                color: #9fb1e6;
+                font-family: "Roboto", sans-serif;
+                font-size: 1.04vw;
+                font-weight: 400;
+                letter-spacing: 0.083vw;
+                @media screen and (orientation: portrait) {
+                    font-size: 1.89vh;
+                    letter-spacing: 0.32vw;
                 }
             }
         }
-        &__infoblock {
+        &_btn {
             display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            .infoblock__item {
-                display: flex;
-                flex-direction: column;
-                color: $white;
-                row-gap: 0.855vh;
-                &:not(:last-of-type) {
-                    margin-bottom: 3.42vh;
-                }
-                &_address,
-                &_link {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    column-gap: 0.83vw;
-                    color: $white;
-                    font-family: "Roboto", sans-serif;
-                    font-size: 1.25vw;
-                    font-weight: 400;
-                    letter-spacing: 0.1vw;
-                    svg {
-                        font-size: 1.25vw;
-                    }
-                }
-                &_link {
-                    text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            column-gap: 0.83vw;
+            svg {
+                font-size: 1.25vw;
+                width: 1.25vw;
+                height: 1.25vw;
+                @media screen and (orientation: portrait) {
+                    font-size: 2.36vh;
+                    width: 2.36vh;
+                    height: 2.36vh;
                 }
             }
         }
     }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex: 0 0 24.479vw;
+        @media screen and (orientation: portrait) {
+            display: none;
+        }
+        &_image {
+            width: 100%;
+            height: 24.479vw;
+            img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    &__infoblock {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .infoblock__item {
+            display: flex;
+            flex-direction: column;
+            color: $white;
+            row-gap: 0.855vh;
+            &:not(:last-of-type) {
+                margin-bottom: 3.42vh;
+            }
+            &_address,
+            &_link {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                column-gap: 0.83vw;
+                color: $white;
+                font-family: "Roboto", sans-serif;
+                font-size: 1.25vw;
+                font-weight: 400;
+                letter-spacing: 0.1vw;
+                svg {
+                    font-size: 1.25vw;
+                }
+            }
+            &_link {
+                text-decoration: none;
+            }
+        }
+    }
 }
-
-

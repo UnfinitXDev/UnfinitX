@@ -4,7 +4,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import TelegramIcon from '@mui/icons-material/Telegram';
-
+import ImageWithBackgroundLines from '../components/ImageWithBackgroundLines'
 import Robot from '../assets/img/contacts.png'
 
 const Contacts = () => {
@@ -24,6 +24,8 @@ const Contacts = () => {
 					<p className="text contacts__text">
 						{t('contacts_text')}
 					</p>
+					<ImageWithBackgroundLines image={Robot} alt={'UnfinitX robot'} className={'contacts__mobile_img'}/> 
+					<h4 className="contacts__mobile_heading">{t('contacts_mobile_heading')}</h4>
 					<form onSubmit={handleSubmit(onSubmit)} className="contacts__form">
 						<input
 							name='name'
@@ -63,7 +65,7 @@ const Contacts = () => {
 							placeholder={t('contacts_message_input')}
 						></textarea>
 						<button type="submit" className="primary-btn contacts__form_btn">
-							<TelegramIcon sx={{ fontSize: '1.25vw', height: '1.25vw', width: '1.25vw' }} />
+							<TelegramIcon  />
 							{t('contacts_btn')}
 						</button>
 					</form>
