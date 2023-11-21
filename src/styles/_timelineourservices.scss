@@ -133,6 +133,9 @@
             display: flex;
             align-items: center;
             column-gap: 1.12vw;
+            background-color: transparent;
+            border: none;
+            outline: none;
             &__icon {
                 width: 2.36vh;
                 height: 2.36vh;
@@ -141,6 +144,7 @@
                 color: #fff;
                 font-family: "Roboto", sans-serif;
                 font-size: 2.13vh;
+                text-align: left;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 120%; /* 21.6px */

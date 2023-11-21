@@ -15,14 +15,25 @@
         background-color: transparent;
         color: $white;
         position: absolute;
-        top: 4.27vh;
-        right: 2.08vw;
         cursor: pointer;
-        margin-bottom: 1.66vw;
+        svg {
+            font-size: inherit;
+            width: inherit;
+            height: inherit;
+        }
         @media screen and (orientation: landscape) {
             font-size: 1.25vw;
             width: 1.25vw;
             height: 1.25vw;
+            top: 4.27vh;
+            right: 2.08vw;
+        }
+        @media screen and (orientation: portrait) {
+            font-size: 1.42vh;
+            width: 1.42vh;
+            height: 1.42vh;
+            top: 1.89vh;
+            right: 1.89vh;
         }
     }
     &__background {
@@ -45,6 +56,12 @@
         border-radius: 1.66vw;
         padding: 2.08vw 4.27vh;
         box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.16);
+        @media screen and (orientation: portrait) {
+            width: 91vw;
+            height: fit-content;
+            padding: 1.89vh;
+            border-radius: 1.89vh;
+        }
         div {
             display: flex;
             flex-direction: column;
@@ -60,6 +77,11 @@
         text-transform: uppercase;
         margin-top: 3.422vh;
         margin-bottom: 1.71vh;
+        @media screen and (orientation: portrait) {
+            margin-top: 3.31vh;
+            font-size: 1.89vh;
+            margin-bottom: 0.94vh;
+        }
     }
     &__text {
         color: $white;
@@ -70,6 +92,11 @@
         width: 75%;
         letter-spacing: 0.13vw;
         margin-bottom: 3.42vh;
+        @media screen and (orientation: portrait) {
+            font-size: 0.94vh;
+            margin-bottom: 1.89vh;
+            width: 100%;
+        }
     }
     &__cost {
         color: $white;
@@ -79,6 +106,10 @@
         font-weight: 700;
         letter-spacing: 0.26vw;
         margin-bottom: 0.85vh;
+        @media screen and (orientation: portrait) {
+            font-size: 3.31vh;
+            margin-bottom: 0.35vh;
+        }
     }
     &__costfrom {
         color: rgba(255, 255, 255, 0.6);
@@ -88,9 +119,18 @@
         font-weight: 700;
         letter-spacing: 0.1vw;
         margin-bottom: 3.42vh;
+        @media screen and (orientation: portrait) {
+            font-size: 1.18vh;
+            margin-bottom: 1.89vh;
+        }
     }
     &__btn {
         font-size: 1.66vw;
         width: 77.27%;
+        @media screen and (orientation: portrait) {
+            font-size: 1.65vh;
+            width: 78%;
+            padding: 1.18vh;
+        }
     }
 }
