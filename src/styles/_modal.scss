@@ -15,7 +15,7 @@
         background-color: transparent;
         color: $white;
         position: absolute;
-        top: 2.08vw;
+        top: 4.27vh;
         right: 2.08vw;
         cursor: pointer;
         margin-bottom: 1.66vw;
@@ -37,14 +37,13 @@
         left: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
         transform: translate(-50%, -50%);
         width: 50vw;
-        height: 50vh;
+        height: 50%;
         background-color: $main-violet;
-        border-radius: 32px;
-        padding: 2.08vw;
+        border-radius: 1.66vw;
+        padding: 2.08vw 4.27vh;
         box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.16);
         div {
             display: flex;
@@ -59,8 +58,8 @@
         font-weight: 900;
         letter-spacing: 0.2vw;
         text-transform: uppercase;
-        margin-top: 2.91vw;
-        margin-bottom: 0.83vw;
+        margin-top: 3.422vh;
+        margin-bottom: 1.71vh;
     }
     &__text {
         color: $white;
@@ -70,7 +69,7 @@
         font-weight: 400;
         width: 75%;
         letter-spacing: 0.13vw;
-        margin-bottom: 1.66vw;
+        margin-bottom: 3.42vh;
     }
     &__cost {
         color: $white;
@@ -79,6 +78,7 @@
         font-size: 3.333vw;
         font-weight: 700;
         letter-spacing: 0.26vw;
+        margin-bottom: 0.85vh;
     }
     &__costfrom {
         color: rgba(255, 255, 255, 0.6);
@@ -87,7 +87,7 @@
         font-size: 1.25vw;
         font-weight: 700;
         letter-spacing: 0.1vw;
-        margin-bottom: 1.66vw;
+        margin-bottom: 3.42vh;
     }
     &__btn {
         font-size: 1.66vw;
