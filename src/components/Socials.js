@@ -48,7 +48,7 @@ const Socials = () => {
                 <PhoneIcon sx={{ color: 'white' }} />
             </a>
             <a
-                href='https://www.instagram.com/_.UnfinitX._/'
+                href='https://www.instagram.com/unfinitx'
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
