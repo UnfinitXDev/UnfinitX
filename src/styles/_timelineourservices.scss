@@ -58,6 +58,9 @@
             line-height: normal;
             letter-spacing: 0.2vw;
             text-transform: uppercase;
+            background-color: transparent;
+            outline: none;
+            border: none;
             &:hover {
                 font-size: 2.08vw;
                 transition: font-size 0.2s ease-in-out;

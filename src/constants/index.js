@@ -318,3 +318,61 @@ export const PROJECTS = {
         },
     ]
 }
+
+export const SERVICES = [
+	{
+		id: 1,
+		serviceTranslationName: 'tos_web',
+		modalData: {
+			headingTranslationName: 'services_web_modal_heading',
+			textTranslationName: 'services_web_modal_text',
+			cost: '1.000'
+		}
+
+	},
+	{
+		id: 2,
+		serviceTranslationName: 'tos_mobile',
+		modalData: {
+			headingTranslationName: 'services_mobile_modal_heading',
+			textTranslationName: 'services_mobile_modal_text',
+			cost: '2.000'
+		}
+	},
+	{
+		id: 3,
+		serviceTranslationName: 'tos_site',
+		modalData: {
+			headingTranslationName: 'services_site_modal_heading',
+			textTranslationName: 'services_site_modal_text',
+			cost: '2.000'
+		}
+	},
+	{
+		id: 4,
+		serviceTranslationName: 'tos_landing',
+		modalData: {
+			headingTranslationName: 'services_landing_modal_heading',
+			textTranslationName: 'services_landing_modal_text',
+			cost: '3.000'
+		}
+	},
+	{
+		id: 5,
+		serviceTranslationName: 'tos_uiux',
+		modalData: {
+			headingTranslationName: 'services_uiux_modal_heading',
+			textTranslationName: 'services_uiux_modal_text',
+			cost: '1.000'
+		}
+	},
+	{
+		id: 6,
+		serviceTranslationName: 'tos_marketing',
+		modalData: {
+			headingTranslationName: 'services_marketing_modal_heading',
+			textTranslationName: 'services_marketing_modal_text',
+			cost: '2.000'
+		}
+	}
+]

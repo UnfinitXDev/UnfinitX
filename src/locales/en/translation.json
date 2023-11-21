@@ -52,32 +52,26 @@
 
 
     "//comment8":"Services Web",
-    "services_web": "Web development",
     "services_web_modal_heading": "Website development for your business",
     "services_web_modal_text": "We know how to solve your problem in the best way",
 
     "//comment9":"Services Mobile",
-    "services_mobile": "Mobile apps",
     "services_mobile_modal_heading": "Mobile application development",
     "services_mobile_modal_text": "We know how to solve your problem in the best way",
 
     "//comment10":"Services Ecommerce",
-    "services_ecommerce": "E commerce",
-    "services_ecommerce_modal_heading": "E commerce sites development",
-    "services_ecommerce_modal_text": "We know how to solve your problem in the best way",
+    "services_site_modal_heading": "E commerce sites development",
+    "services_site_modal_text": "We know how to solve your problem in the best way",
 
     "//comment11":"Services Landing",
-    "services_landing": "Landing page",
     "services_landing_modal_heading": "Landing page",
     "services_landing_modal_text": "Single-page site for growth of advertising efficiency",
 
     "//comment12":"Services UX UI",
-    "services_uxui": "UX/UI Design",
-    "services_uxui_modal_heading": "UI/UX design for your business",
-    "services_uxui_modal_text": "We know how to solve your problem in the best way",
+    "services_uiux_modal_heading": "UI/UX design for your business",
+    "services_uiux_modal_text": "We know how to solve your problem in the best way",
 
     "//comment13":"Services Marketing",
-    "services_marketing": "Marketing promotion",
     "services_marketing_modal_heading": "Marketing promotion",
     "services_marketing_modal_text": "We know how to solve your problem in the best way",
 

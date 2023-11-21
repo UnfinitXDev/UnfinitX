@@ -1,6 +1,7 @@
 .contacts {
     width: 87.5vw;
-    padding: 4.16vw;
+    padding: 4.16vw 4.16vw 2.7vw;
+    
     @media screen and (orientation: portrait) {
         width: 100%;
         padding: 1.89vh;
@@ -28,7 +29,7 @@
     }
 
     &__text {
-        margin-bottom: 5.56vh;
+        margin-bottom: 1.875vw;
         @media screen and (orientation: portrait) {
             letter-spacing: 0.28vw;
             margin-bottom: 1.89vh;
@@ -67,8 +68,6 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        @media screen and (orientation: portrait) {
-        }
         &_input {
             background-color: transparent;
             border: none;

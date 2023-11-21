@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
-import Robot from '../../assets/img/tos.png'
 import { useNavigate } from 'react-router-dom'
+import Robot from '../../assets/img/tos.png'
 import WebIcon from '../../assets/img/web.svg'
 import MobileIcon from '../../assets/img/device_icon.svg'
 import BagIcon from '../../assets/img/bag_icon.svg'
@@ -8,9 +8,11 @@ import DocumentIcon from '../../assets/img/document_icon.svg'
 import UXIcon from '../../assets/img/ux_icon.svg'
 import MarketingIcon from '../../assets/img/marketing_icon.svg'
 
-const TimelineOurServices = () => {
+const icons = [WebIcon, MobileIcon, BagIcon, DocumentIcon, UXIcon, MarketingIcon]
+const TimelineOurServices = ({ services, setActiveServiceModal }) => {
 	const { t } = useTranslation()
 	const navigate = useNavigate()
+
 
 	return (
 		<div className="tos">
@@ -19,42 +21,14 @@ const TimelineOurServices = () => {
 			</h1>
 			<div className='tos__wrapper'>
 				<div className='tos__services'>
-					<p className='tos__services_service'>
-						<img className='tos__services_icon' src={WebIcon} alt='Web Icon' />
-						<span className='tos__services_line'></span>
-						{t('tos_web')}
-						<span className='tos__services_line second'></span>
-					</p>
-					<p className='tos__services_service'>
-						<img className='tos__services_icon' src={MobileIcon} alt='Mobile Icon' />
-						<span className='tos__services_line'></span>
-						{t('tos_mobile')}
-						<span className='tos__services_line second'></span>
-					</p>
-					<p className='tos__services_service'>
-						<img className='tos__services_icon' src={BagIcon} alt='Bag Icon' />
-						<span className='tos__services_line'></span>
-						{t('tos_site')}
-						<span className='tos__services_line second'></span>
-					</p>
-					<p className='tos__services_service'>
-						<img className='tos__services_icon' src={DocumentIcon} alt='Document Icon' />
-						<span className='tos__services_line'></span>
-						{t('tos_landing')}
-						<span className='tos__services_line second'></span>
-					</p>
-					<p className='tos__services_service'>
-						<img className='tos__services_icon' src={UXIcon} alt='UX Icon' />
-						<span className='tos__services_line'></span>
-						{t('tos_uiux')}
-						<span className='tos__services_line second'></span>
-					</p>
-					<p className='tos__services_service'>
-						<img className='tos__services_icon' src={MarketingIcon} alt='Marketing Icon' />
-						<span className='tos__services_line'></span>
-						{t('tos_marketing')}
-						<span className='tos__services_line second'></span>
-					</p>
+					{services.map((service, i) => (
+						<button key={service.id} onClick={() => setActiveServiceModal(service.id)} className='tos__services_service'>
+							<img className='tos__services_icon' src={icons[i]} alt={service.serviceTranslationName.split('_')[1]} />
+							<span className='tos__services_line'></span>
+							{t(service.serviceTranslationName)}
+							<span className='tos__services_line second'></span>
+						</button>
+					))}
 					<div className='tos__services_shadow'>
 
 					</div>
