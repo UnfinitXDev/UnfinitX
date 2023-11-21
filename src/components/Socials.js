@@ -12,7 +12,7 @@ const Socials = () => {
     return (
         <div className='social'>
             <a
-                href='https://www.linkedin.com/company/UnfinitXitcompany/'
+                href='https://t.me/+37433339616'
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
@@ -20,7 +20,7 @@ const Socials = () => {
                 <TelegramIcon sx={{ color: 'white' }} />
             </a>
             <a
-                href='https://www.instagram.com/_.UnfinitX._/'
+                href='https://api.whatsapp.com/send?phone=37433339616'
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
@@ -28,7 +28,7 @@ const Socials = () => {
                 <WhatsAppIcon sx={{ color: 'white' }}/>
             </a>
             <a
-                href='https://www.facebook.com/profile.php?id=100089765528347'
+                href='viber://contact?number=%2B37433339616'
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
@@ -40,7 +40,7 @@ const Socials = () => {
 
             </a>
             <a
-                href='tel:+37494969626'
+                href='tel:+37433339616'
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
@@ -82,14 +82,14 @@ const Socials = () => {
             
             
             <a
-                href='tel:+37494969626'
+                href='https://www.behance.net/Unfinitx'
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
             >
                 <img
                     src={Behance}
-                    alt='Facebook logo'
+                    alt='Behance logo'
                 />
             </a>
         </div>
