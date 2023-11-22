@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import Logo from '../assets/img/logo.svg'
 import Socials from './Socials';
-import Languages from './Languages';
+// import Languages from './Languages';
 
 
 const Sidebar = () => {
@@ -55,7 +55,7 @@ const Sidebar = () => {
 				</nav>
 				<Socials />
 
-				<Languages />
+				{/* <Languages /> */}
 			</div>
 		</aside>
 	)

@@ -6,8 +6,11 @@ import translationAM from './locales/am/translation.json'
 import translationRU from './locales/ru/translation.json'
 
 i18n.use(initReactI18next).init({
-    lng: localStorage.getItem("i18nextLng") || "en",
-    fallbackLng: localStorage.getItem("i18nextLng") || "en",
+    // lng: localStorage.getItem("i18nextLng") || "en",
+    lng: "en",
+
+//    fallbackLng: localStorage.getItem("i18nextLng") || "en",
+    fallbackLng: "en",
     interpolation: {
         escapeValue: false,
     },

@@ -1,8 +1,13 @@
 .portfolio {
     width: 87.5vw;
-    padding-top: 4.16vw;
-    padding-left: 4.16vw;
+    padding-top: 1.3vw;
+    padding-left: 2.08vw;
     padding-bottom: 5.56vh;
+    @media screen and (orientation: landscape) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     @media screen and (orientation: portrait) {
         width: 100%;
         padding: 0 8px;

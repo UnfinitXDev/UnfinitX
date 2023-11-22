@@ -1,9 +1,15 @@
 .aboutus {
     width: 87.5vw;
-    padding-top: 4.16vw;
-    padding-left: 4.16vw;
-    padding-bottom: 4.16vw;
+    padding-top: 2.08vw;
+    padding-left: 2.08vw;
+    // padding-bottom: 4.16vw;
+    padding-bottom: 5.775vh;
     padding-right: 2.08vw;
+    @media screen and (orientation: landscape) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     @media screen and (orientation: portrait) {
         width: 100%;
         padding: 1.89vh;

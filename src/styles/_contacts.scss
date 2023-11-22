@@ -1,6 +1,6 @@
 .contacts {
     width: 87.5vw;
-    padding: 4.16vw 4.16vw 2.7vw;
+    padding: 1.3vw 2.08vw 2.7vw;
     
     @media screen and (orientation: portrait) {
         width: 100%;
@@ -13,6 +13,8 @@
         display: flex;
         position: relative;
         justify-content: space-between;
+        height: 100%;
+        
         @media screen and (orientation: portrait) {
             flex-direction: column;
         }
@@ -26,6 +28,9 @@
 
     &__left {
         flex: 0 0 45.3125vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__text {

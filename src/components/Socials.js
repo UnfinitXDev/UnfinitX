@@ -79,8 +79,7 @@ const Socials = () => {
                 />
 
             </a>
-            
-            
+
             <a
                 href='https://www.behance.net/Unfinitx'
                 target='_blank'
