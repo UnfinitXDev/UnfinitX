@@ -1,18 +1,28 @@
 import { useForm } from "react-hook-form"
 import { useTranslation } from "react-i18next"
+import emailjs from "@emailjs/browser";	
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import ImageWithBackgroundLines from '../components/ImageWithBackgroundLines'
 import Robot from '../assets/img/contacts.png'
+import { useRef } from "react";
 
 const Contacts = () => {
 	const { t } = useTranslation()
-	const { handleSubmit, register } = useForm()
-	const onSubmit = data => {
-		console.log(data);
+	const form = useRef(null)
+
+	const sendEmail = (e) => {
+		emailjs.sendForm('service_dzbp593', 'template_bjtgp3g', form.current, 'yqembHztUSQD2C14_')
+			.then((result) => {
+				console.log(result.text);
+			}, (error) => {
+				console.log(error.text);
+			});
 	}
+
+	const { handleSubmit, register } = useForm()
 
 	return (
 		<div className="contacts">
@@ -24,9 +34,9 @@ const Contacts = () => {
 					<p className="text contacts__text">
 						{t('contacts_text')}
 					</p>
-					<ImageWithBackgroundLines image={Robot} alt={'UnfinitX robot'} className={'contacts__mobile_img'}/> 
+					<ImageWithBackgroundLines image={Robot} alt={'UnfinitX robot'} className={'contacts__mobile_img'} />
 					<h4 className="contacts__mobile_heading">{t('contacts_mobile_heading')}</h4>
-					<form onSubmit={handleSubmit(onSubmit)} className="contacts__form">
+					<form ref={form} onSubmit={handleSubmit(sendEmail)} className="contacts__form">
 						<input
 							name='name'
 							{...register('name', {
@@ -54,6 +64,7 @@ const Contacts = () => {
 							{...register('email', {
 								required: t('contacts_email_input_required_error')
 							})}
+							type="email"
 							className="contacts__form_input"
 							placeholder={t('contacts_email_input') + ' *'}
 						/>
@@ -65,7 +76,7 @@ const Contacts = () => {
 							placeholder={t('contacts_message_input')}
 						></textarea>
 						<button type="submit" className="primary-btn contacts__form_btn">
-							<TelegramIcon  />
+							<TelegramIcon />
 							{t('contacts_btn')}
 						</button>
 					</form>
