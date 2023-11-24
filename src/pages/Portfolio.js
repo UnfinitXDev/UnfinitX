@@ -79,9 +79,6 @@ const Portfolio = () => {
 			<h1 className="heading portfolio__heading">
 				{t('portfolio_heading')}
 			</h1>
-			<p className="text portfolio__text">
-				{t('portfolio_text')}
-			</p>
 			<div className="portfolio__tabs">
 				<div className="portfolio__tabs_menu tabs">
 					{

@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form"
 import { useTranslation } from "react-i18next"
-import emailjs from "@emailjs/browser";	
+import emailjs from "@emailjs/browser";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
@@ -20,9 +20,10 @@ const Contacts = () => {
 			}, (error) => {
 				console.log(error.text);
 			});
+		reset()
 	}
 
-	const { handleSubmit, register } = useForm()
+	const { handleSubmit, register, reset } = useForm()
 
 	return (
 		<div className="contacts">
@@ -47,7 +48,7 @@ const Contacts = () => {
 							placeholder={t('contacts_name_input') + ' *'}
 						/>
 						<input
-							name='phoneNumber'
+							name='phone'
 							{...register('phone', {
 								required: t('contacts_phone_input_required_error'),
 								pattern: {
