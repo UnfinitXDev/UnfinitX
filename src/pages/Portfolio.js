@@ -107,7 +107,7 @@ const Portfolio = () => {
 					onMouseLeave={() => setMouseDown(false)}
 				>
 					{PROJECTS[activeTab.name].map(project => (
-						<a href="https://www.google.com" key={project.id} className="project">
+						<a href="https://www.behance.net/Unfinitx" rel="noreferrer" target="_blank" key={project.id} className="project">
 							{project.image && <img
 								className="project__image"
 								loading="lazy"
