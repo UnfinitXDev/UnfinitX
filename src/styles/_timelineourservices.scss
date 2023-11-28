@@ -156,6 +156,7 @@
                     position: relative;
                     padding-inline: 4.1vw;
                     width: fit-content;
+                    font-family: inherit;
                     &::after {
                         position: absolute;
                         z-index: 4;
@@ -190,7 +191,7 @@
     }
     &__infoblock {
         &_sub {
-            margin-bottom: 0.94vh;
+            margin-bottom: 1.88vh;
         }
         &_text {
             margin-bottom: 2.84vh;
@@ -206,6 +207,15 @@
         &__services {
             &_service {
                 font-family: $armenian-primary-font-family;
+            }
+        }
+    }
+    .tosmobile {
+        &__services {
+            .service {
+                &__name {
+                    font-family: $armenian-primary-font-family;
+                }
             }
         }
     }

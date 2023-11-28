@@ -140,3 +140,15 @@
         }
     }
 }
+
+:lang(am) {
+    .header {
+        .burger {
+            &__menu {
+                &_link {
+                    font-family: $armenian-primary-font-family;
+                }
+            }
+        }
+    }
+}

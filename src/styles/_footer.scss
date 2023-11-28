@@ -112,3 +112,13 @@
         text-align: center;
     }
 }
+
+:lang(am) {
+    .footer {
+        &__nav {
+            &_link {
+                font-family: $armenian-primary-font-family;
+            }
+        }
+    }
+}

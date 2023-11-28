@@ -36,7 +36,7 @@ const Contacts = () => {
 						{t('contacts_text')}
 					</p>
 					<ImageWithBackgroundLines image={Robot} alt={'UnfinitX robot'} className={'contacts__mobile_img'} />
-					<h4 className="contacts__mobile_heading">{t('contacts_mobile_heading')}</h4>
+					<h4 className="contacts__mobile_heading">{t('contacts_mobile_form_heading')}</h4>
 					<form ref={form} onSubmit={handleSubmit(sendEmail)} className="contacts__form">
 						<input
 							name='name'

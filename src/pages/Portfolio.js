@@ -85,7 +85,7 @@ const Portfolio = () => {
 						tabs.map(tab => (
 							<div
 								key={tab.id}
-								className={`tab  ${activeTab.id === tab.id ? 'active' : ''}`}
+								className={`tab${activeTab.id === tab.id ? ' active' : ''}`}
 							>
 								<span className="tab__prefix"></span>
 								<button

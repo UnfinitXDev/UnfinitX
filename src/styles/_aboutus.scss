@@ -209,9 +209,16 @@
                 width: 110%;
                 font-size: 2.08vw;
                 margin-bottom: 2.56vh;
+                @media screen and (orientation: portrait) {
+                    font-size: 2.132vh;
+                    margin-bottom: 1.89vh;
+                }
             }
             &_text {
                 margin-bottom: 5.1vh;
+                @media screen and (orientation: portrait) {
+                    margin-bottom: 1.89vh;
+                }
             }
         }
     }
@@ -225,11 +232,16 @@
         &__infoblock {
             flex-basis: 34.25vw;
             &_subheading {
-                // width: 110%;
                 margin-bottom: 3.42vh;
+                @media screen and (orientation: portrait) {
+                    margin-bottom: 1.89vh;
+                }
             }
             &_text {
                 margin-bottom: 5.1vh;
+                @media screen and (orientation: portrait) {
+                    margin-bottom: 1.89vh;
+                }
             }
         }
     }

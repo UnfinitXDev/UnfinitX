@@ -26,13 +26,13 @@ const OurServicesMobile = () => {
         <>
             <div className="tosmobile">
                 <h1 className="heading2 tosmobile__heading">
-                    {t('tos_heading')}
+                    {t('tos_heading_mobile')}
                 </h1>
 
 
                 <div className='tosmobile__services'>
                     {SERVICES.map((service, i) => (
-                        <button onClick={() => setActiveServiceModal(service.id)} className='tosmobile__services_service service'>
+                        <button key={service.id} onClick={() => setActiveServiceModal(service.id)} className='tosmobile__services_service service'>
                             <img className='service__icon' src={icons[i]} alt={service.serviceTranslationName.split('_')[1]} />
                             <p className='service__name'>
                                 <span className='service__name_text'>
@@ -41,56 +41,6 @@ const OurServicesMobile = () => {
                             </p>
                         </button>
                     ))}
-                    {/* <div className='tosmobile__services_service service'>
-                    <img className='service__icon' src={WebIcon} alt='Web Icon' />
-                    <p className='service__name'>
-                        <span className='service__name_text'>
-                            {t('tos_web')}
-                        </span>
-                    </p>
-                </div>
-                <div className='tosmobile__services_service service'>
-                    <img className='service__icon' src={MobileIcon} alt='Mobile Icon' />
-                    <p className='service__name'>
-                        <span className='service__name_text'>
-                            {t('tos_mobile')}
-                        </span>
-                    </p>
-                </div>
-                <div className='tosmobile__services_service service'>
-                    <img className='service__icon' src={BagIcon} alt='Bag Icon' />
-                    <p className='service__name'>
-                        <span className='service__name_text'>
-                            {t('tos_site')}
-                        </span>
-                    </p>
-                </div>
-                <div className='tosmobile__services_service service'>
-                    <img className='service__icon' src={DocumentIcon} alt='Document Icon' />
-                    <p className='service__name'>
-                        <span className='service__name_text'>
-                            {t('tos_landing')}
-                        </span>
-                    </p>
-                </div>
-                <div className='tosmobile__services_service service'>
-                    <img className='service__icon' src={UXIcon} alt='UX Icon' />
-                    <p className='service__name'>
-                        <span className='service__name_text'>
-                            {t('tos_uiux')}
-                        </span>
-                    </p>
-                </div>
-                <div className='tosmobile__services_service service'>
-                    <img className='service__icon' src={MarketingIcon} alt='Marketing Icon' />
-                    <p className='service__name'>
-                        <span className='service__name_text'>
-                            {t('tos_marketing')}
-                        </span>
-                    </p>
-                </div>
-                <div className='tosmobile__services_gradient'>
-                </div> */}
                 </div>
 
                 <ImageWithBackgroundLines image={Robot} className={'tosmobile__imageblock'} alt={'Unfinitx Robot'} />

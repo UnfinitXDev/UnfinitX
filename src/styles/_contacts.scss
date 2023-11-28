@@ -1,7 +1,7 @@
 .contacts {
     width: 87.5vw;
     padding: 1.3vw 2.08vw 2.7vw;
-    
+
     @media screen and (orientation: portrait) {
         width: 100%;
         padding: 1.89vh;
@@ -14,7 +14,7 @@
         position: relative;
         justify-content: space-between;
         height: 100%;
-        
+
         @media screen and (orientation: portrait) {
             flex-direction: column;
         }
@@ -87,7 +87,7 @@
             @media screen and (orientation: portrait) {
                 padding: 0.95vh 1.89vh;
                 font-size: 1.89vh;
-                border-color: #6578b1;  
+                border-color: #6578b1;
                 letter-spacing: 0.32vw;
             }
             &::placeholder {
@@ -220,6 +220,15 @@
     }
 }
 
+:lang(am) {
+    .contacts {
+        &__mobile {
+            &_heading {
+                font-family: $armenian-primary-font-family;
+            }
+        }
+    }
+}
 
 :lang(ru) {
     .contacts {
