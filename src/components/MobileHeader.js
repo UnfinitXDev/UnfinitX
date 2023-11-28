@@ -78,7 +78,7 @@ const MobileHeader = () => {
                     <div className='burger__menu_gradient' data-position='right'></div>
                 </div>
                 <Socials />
-                {/* <Languages wrapperClassName={'burger-languages'} /> */}
+                <Languages wrapperClassName={'burger-languages'} />
             </Menu>
         </header>
     )
