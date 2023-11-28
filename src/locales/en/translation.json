@@ -1,7 +1,6 @@
 {
     "//comment1": "Menu Items",
     "home": "Home",
-    "services": "Services",
     "aboutus": "About Us",
     "portfolio": "Portfolio",
     "contacts": "Contacts",
@@ -10,7 +9,6 @@
     "timeline_os": "Our Services",
     "timeline_wcs": "Why choose us",
     "timeline_partners": "Partners",
-    "timeline_contacts": "Contacts",
     
     "//comment3": "Timeline Our Services Info",
     "tos_heading": "Our Services",
@@ -36,13 +34,6 @@
     "//comment5": "Timeline Partners",
     "tp_heading": "Our Customers",
     "tp_text": "The statement conveys that the company's valued clients consist of a broad and varied group of partners, both from the past and the present. These partners come from different industries and sectors, indicating that the company has experience and collaboration with a wide array of businesses and organizations, highlighting their versatility and adaptability in serving a diverse clientele.",
-
-    "//comment6":"Timeline Contacts",
-    "tc_heading":"Why Companies Choose UnfinitX: Building Trust with Transparency",
-    "tc_text":"Outsourcing to another company, however reputable it is, always comes with a risk. The best we can do as a vendor to lower that risk is to be completely transparent about who we are, what we do, and where we have succeeded.",
-    "tc_btn":"Discuss a project",
-    "tc_address":"Armenia, Vanadzor, Tigran Mets 8",
-    "tc_copyright":"© UnfinitX 2023. All rights reserved.",
 
     "//comment7":"Services",
     "services_heading":"our services",

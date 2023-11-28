@@ -70,8 +70,6 @@
         &_sub2 {
             margin-bottom: 0.95vh;
         }
-        &_text {
-        }
         &:not(:last-of-type) {
             margin-bottom: 2.84vh;
         }
@@ -86,113 +84,24 @@
     }
 }
 
-:lang(am),
-:lang(ru) {
+:lang(am) {
     .twcs {
-        &__imageblock {
-            @media (max-width: 1620px) {
-                width: 590px;
-                top: 12%;
-            }
-            @media (max-width: 1440px) {
-                width: 500px;
-                right: -32px;
-                top: 15%;
-            }
-            @media (max-width: 1280px) {
-                width: 400px;
-                top: 0;
-                right: -24px;
-            }
+        &__heading {
+            margin-bottom: 2.56vh;
         }
         &__options {
-            @media (max-width: 1620px) {
-                gap: 32px;
-            }
-            @media (max-width: 1440px) {
-                gap: 24px;
-            }
-            @media (max-width: 1024px) {
-                gap: 16px;
-            }
-        }
-        &__option {
-            @media (max-width: 1620px) {
-                width: 100%;
-            }
-            &_text {
-                width: 100%;
-                @media (max-width: 1620px) {
-                    width: 90%;
-                }
-                @media (max-width: 1280px) {
-                    width: 60%;
-                    font-size: 15px;
-                    letter-spacing: 1.2px;
-                }
-            }
-            &:first-of-type {
-                order: 3;
-                & > .text {
-                    @media (max-width: 1280px) {
-                        width: 80%;
-                    }
-                }
-            }
-            &:nth-of-type(2) {
-                order: 2;
-                & > .sub2 {
-                    @media (max-width: 1024px) {
-                        width: 50%;
-                    }
-                }
-                & > .text {
-                    @media (max-width: 1024px) {
-                        width: 60%;
-                    }
-                }
-            }
-            &:nth-of-type(3) {
-                order: 1;
-                & > .sub2 {
-                    @media (max-width: 1024px) {
-                        width: 50%;
-                    }
-                }
-                & > .text {
-                    @media (max-width: 1024px) {
-                        width: 60%;
-                    }
-                }
-            }
-            &:nth-of-type(4) {
-                order: 4;
-                & > p {
-                    @media (max-width: 1280px) {
-                        width: 80%;
-                    }
-                }
-            }
+            row-gap: 2.56vh;
         }
     }
 }
 
 :lang(ru) {
     .twcs {
-        &__option {
-            &_text {
-                @media (max-width: 1440px) {
-                    width: 95%;
-                }
-                @media (max-width: 1280px) {
-                    width: 50%;
-                }
-            }
-            &:first-of-type > .text {
-                @media (max-width: 1024px) {
-                    width: 95%;
-                }
-            }
+        &__heading {
+            margin-bottom: 2.56vh;
+        }
+        &__options {
+            row-gap: 2.56vh;
         }
     }
 }

@@ -219,3 +219,12 @@
         }
     }
 }
+
+
+:lang(ru) {
+    .contacts {
+        &__left {
+            flex-basis: 49.4375vw;
+        }
+    }
+}

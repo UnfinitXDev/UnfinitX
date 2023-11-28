@@ -162,3 +162,30 @@
         }
     }
 }
+
+:lang(am) {
+    .portfolio {
+        &__tabs {
+            &_menu {
+                flex-basis: 13.8vw;
+                &.tabs {
+                    .tab {
+                        &__btn {
+                            font-family: $armenian-primary-font-family;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+:lang(ru) {
+    .portfolio {
+        &__tabs {
+            &_menu {
+                flex-basis: 13.8vw;
+            }
+        }
+    }
+}

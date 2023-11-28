@@ -197,3 +197,40 @@
         }
     }
 }
+
+:lang(am) {
+    .aboutus {
+        &__heading {
+            margin-bottom: 5.54vh;
+        }
+        &__infoblock {
+            flex-basis: 32.25vw;
+            &_subheading {
+                width: 110%;
+                font-size: 2.08vw;
+                margin-bottom: 2.56vh;
+            }
+            &_text {
+                margin-bottom: 5.1vh;
+            }
+        }
+    }
+}
+
+:lang(ru) {
+    .aboutus {
+        &__heading {
+            margin-bottom: 5.54vh;
+        }
+        &__infoblock {
+            flex-basis: 34.25vw;
+            &_subheading {
+                // width: 110%;
+                margin-bottom: 3.42vh;
+            }
+            &_text {
+                margin-bottom: 5.1vh;
+            }
+        }
+    }
+}

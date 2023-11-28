@@ -200,3 +200,13 @@
         }
     }
 }
+
+:lang(am) {
+    .tos {
+        &__services {
+            &_service {
+                font-family: $armenian-primary-font-family;
+            }
+        }
+    }
+}

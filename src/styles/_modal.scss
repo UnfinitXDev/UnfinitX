@@ -51,7 +51,7 @@
         align-items: center;
         transform: translate(-50%, -50%);
         width: 50vw;
-        height: 50%;
+        height: fit-content;
         background-color: $main-violet;
         border-radius: 1.66vw;
         padding: 2.08vw 4.27vh;
@@ -134,3 +134,23 @@
         }
     }
 }
+
+:lang(am) {
+    .modal {
+        &__heading {
+            font-family: $armenian-primary-font-family;
+        }
+        &__text {
+            width: 100%;
+
+        }
+    }
+}
+:lang(ru) {
+    .modal {
+        &__text {
+            width: 100%;
+        }
+    }
+}
+

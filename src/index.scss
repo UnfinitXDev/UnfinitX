@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "SHK Aida";
+    src: url("./assets/fonts/SHK_Aida.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SHK Aida";
+    src: url("./assets/fonts/SHKAidaBld.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "SHK Aida";
+    src: url("./assets/fonts/SHKAida-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+
 @import "styles/variables";
 
 * {
@@ -138,6 +155,13 @@ body {
 
 :lang(am) {
     * {
-        font-family: "Arial", sans-serif !important;
+        font-family: "Arial", sans-serif;
+    }
+    .heading, .heading2, .sub1, .sub2, .primary-btn {
+        font-family: $armenian-primary-font-family;
+    }   
+
+    .text {
+        font-family: "Arial", sans-serif; 
     }
 }

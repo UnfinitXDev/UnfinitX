@@ -36,8 +36,8 @@
     }
 
     &__imageblock {
-        flex: 0 0 33.4375vw;
-        height: 33.4375vw;
+        flex: 0 0 31.4375vw;
+        height: 31.4375vw;
         margin-top: -5vh;
         img {
             display: block;
@@ -73,6 +73,17 @@
             display: block;
             object-fit: contain;
             width: 100%;
+        }
+    }
+}
+
+:lang(am) {
+    .tpartners {
+        &__infoblock {
+            &_text {
+                font-size: 0.9375vw;
+                margin-bottom: 4.5vh;
+            }
         }
     }
 }
