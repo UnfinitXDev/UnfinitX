@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { NavLink, useLocation } from 'react-router-dom';
 
 import Socials from './Socials';
-// import Languages from './Languages';
+import Languages from './Languages';
 
 const MobileHeader = () => {
     const { t } = useTranslation();
