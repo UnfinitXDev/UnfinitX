@@ -6,7 +6,6 @@
     @media screen and (orientation: landscape) {
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
     }
     @media screen and (orientation: portrait) {
         width: 100%;
@@ -14,7 +13,7 @@
         margin-bottom: 2.89vh;
     }
     &__heading {
-        margin-bottom: 9.3vh;
+        margin-bottom: 9.1vh;
         @media screen and (orientation: portrait) {
             display: none;
         }
@@ -124,16 +123,9 @@
             gap: 1.25vw;
             overflow-x: scroll;
             overflow-y: hidden;
-            cursor: grab;
             height: 100%;
             &::-webkit-scrollbar {
                 display: none;
-            }
-            &.grabbing {
-                cursor: grabbing;
-                .project {
-                    pointer-events: none;
-                }
             }
             @media screen and (orientation: portrait) {
                 grid-template-columns: repeat(2, 1fr);
