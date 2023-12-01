@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { PROJECTS } from "../constants"
+import { Projects } from "../constants"
 import { useState } from "react"
 import { useHorizontalScroll } from "../services/useHorizontalScroll"
 
@@ -19,10 +19,10 @@ const Portfolio = () => {
 			id: 3,
 			name: 'uxui'
 		},
-		{
-			id: 4,
-			name: 'marketing'
-		},
+		// {
+		// 	id: 4,
+		// 	name: 'marketing'
+		// },
 		{
 			id: 5,
 			name: 'landing'
@@ -38,7 +38,7 @@ const Portfolio = () => {
 		if (tab.id !== activeTab.id)
 			setActiveTab(tab)
 	}
-	
+
 	return (
 		<div className="portfolio">
 			<h1 className="heading portfolio__heading">
@@ -68,10 +68,8 @@ const Portfolio = () => {
 				<div
 					ref={scrollRef}
 					className={`portfolio__tabs_content`}
-					// onMouseDown={startDragging}
-					// onMouseLeave={() => setMouseDown(false)}
 				>
-					{PROJECTS[activeTab.name].map(project => (
+					{/* {PROJECTS[activeTab.name].map(project => (
 						<a href="https://www.behance.net/Unfinitx" rel="noreferrer" target="_blank" key={project.id} className="project">
 							{project.image && <img
 								className="project__image"
@@ -80,7 +78,25 @@ const Portfolio = () => {
 								alt={project.name}
 							/>}
 						</a>
-					))}
+					))} */}
+					{Projects.map(project => {
+						console.log(project, 'project')
+						console.log(activeTab, 'activeTab')
+
+						if (project.types.includes(activeTab.name) || activeTab.name === 'all') {
+							return (
+								<a href={project.link} rel="noreferrer" target="_blank" key={project.id} className="project">
+									{project.image && <img
+										className="project__image"
+										loading="lazy"
+										src={project.image}
+										alt={project.name}
+									/>}
+								</a>
+							)
+						}
+						return null;
+					})}
 				</div>
 			</div>
 		</div>
