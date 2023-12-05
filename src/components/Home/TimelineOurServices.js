@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
-import Robot from '../../assets/img/tos.png'
+import Robot from '../../assets/img/tos.webp'
 import WebIcon from '../../assets/img/web.svg'
 import MobileIcon from '../../assets/img/device_icon.svg'
 import BagIcon from '../../assets/img/bag_icon.svg'
