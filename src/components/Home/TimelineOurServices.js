@@ -23,14 +23,13 @@ const TimelineOurServices = ({ services, setActiveServiceModal }) => {
 				<div className='tos__services'>
 					{services.map((service, i) => (
 						<button key={service.id} onClick={() => setActiveServiceModal(service.id)} className='tos__services_service'>
-							<img className='tos__services_icon' src={icons[i]} alt={service.serviceTranslationName.split('_')[1]} />
+							<img className='tos__services_icon' src={icons[i]} alt={service.iconAlt} />
 							<span className='tos__services_line'></span>
 							{t(service.serviceTranslationName)}
 							<span className='tos__services_line second'></span>
 						</button>
 					))}
 					<div className='tos__services_shadow'>
-
 					</div>
 				</div>
 				<div className='tos__imageblock'>

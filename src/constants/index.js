@@ -387,7 +387,8 @@ export const SERVICES = [
 			headingTranslationName: 'services_web_modal_heading',
 			textTranslationName: 'services_web_modal_text',
 			cost: '1.000'
-		}
+		},
+        iconAlt: 'PC Window'
 
 	},
 	{
@@ -397,7 +398,8 @@ export const SERVICES = [
 			headingTranslationName: 'services_mobile_modal_heading',
 			textTranslationName: 'services_mobile_modal_text',
 			cost: '2.000'
-		}
+		},
+        iconAlt: 'Cell Phone'
 	},
 	{
 		id: 3,
@@ -406,7 +408,8 @@ export const SERVICES = [
 			headingTranslationName: 'services_site_modal_heading',
 			textTranslationName: 'services_site_modal_text',
 			cost: '2.000'
-		}
+		},
+        iconAlt: 'Bag'
 	},
 	{
 		id: 4,
@@ -415,7 +418,8 @@ export const SERVICES = [
 			headingTranslationName: 'services_landing_modal_heading',
 			textTranslationName: 'services_landing_modal_text',
 			cost: '3.000'
-		}
+		},
+        iconAlt: 'Document stars'
 	},
 	{
 		id: 5,
@@ -424,7 +428,8 @@ export const SERVICES = [
 			headingTranslationName: 'services_uiux_modal_heading',
 			textTranslationName: 'services_uiux_modal_text',
 			cost: '1.000'
-		}
+		},
+        iconAlt: 'UX Circle'
 	},
 	{
 		id: 6,
@@ -433,6 +438,7 @@ export const SERVICES = [
 			headingTranslationName: 'services_marketing_modal_heading',
 			textTranslationName: 'services_marketing_modal_text',
 			cost: '2.000'
-		}
+		},
+        iconAlt: 'Megaphone'
 	}
 ]
