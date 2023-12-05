@@ -39,9 +39,9 @@ const TimelineOurServices = ({ services, setActiveServiceModal }) => {
 			</div>
 
 			<div className='tos__infoblock'>
-				<h4 className='sub1 tos__infoblock_sub'>
+				<h5 className='sub1 tos__infoblock_sub'>
 					{t('tos_sub1')}
-				</h4>
+				</h5>
 				<div>
 					<p className='text tos__infoblock_text'>
 						{t('tos_text')}

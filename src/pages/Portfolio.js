@@ -69,19 +69,7 @@ const Portfolio = () => {
 					ref={scrollRef}
 					className={`portfolio__tabs_content`}
 				>
-					{/* {PROJECTS[activeTab.name].map(project => (
-						<a href="https://www.behance.net/Unfinitx" rel="noreferrer" target="_blank" key={project.id} className="project">
-							{project.image && <img
-								className="project__image"
-								loading="lazy"
-								src={project.image}
-								alt={project.name}
-							/>}
-						</a>
-					))} */}
 					{Projects.map(project => {
-						console.log(project, 'project')
-						console.log(activeTab, 'activeTab')
 
 						if (project.types.includes(activeTab.name) || activeTab.name === 'all') {
 							return (

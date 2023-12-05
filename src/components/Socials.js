@@ -16,6 +16,7 @@ const Socials = () => {
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
+                aria-label="Telegram"
             >
                 <TelegramIcon sx={{ color: 'white' }} />
             </a>
@@ -24,6 +25,7 @@ const Socials = () => {
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
+                aria-label="WhatsApp"
             >
                 <WhatsAppIcon sx={{ color: 'white' }}/>
             </a>
@@ -32,10 +34,11 @@ const Socials = () => {
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
+                aria-label="Viber"
             >
                 <img
                     src={Viber}
-                    alt='Facebook logo'
+                    alt='Viber'
                 />
 
             </a>
@@ -44,6 +47,7 @@ const Socials = () => {
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
+                aria-label="Phone Call"
             >
                 <PhoneIcon sx={{ color: 'white' }} />
             </a>
@@ -52,6 +56,7 @@ const Socials = () => {
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
+                aria-label="Instagram"
             >
                 <InstagramIcon sx={{ color: 'white' }} />
             </a>
@@ -60,6 +65,7 @@ const Socials = () => {
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
+                aria-label="Linkedin"
             >
                 <img
                     src={Linkedin}
@@ -72,6 +78,7 @@ const Socials = () => {
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
+                aria-label="Facebook"
             >
                 <img
                     src={Facebook}
@@ -85,6 +92,7 @@ const Socials = () => {
                 target='_blank'
                 rel='noreferrer'
                 className='social__link'
+                aria-label="Behance"
             >
                 <img
                     src={Behance}

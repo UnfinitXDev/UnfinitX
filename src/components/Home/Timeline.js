@@ -1,9 +1,8 @@
-import React, { useRef, useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import TimelineOurServices from './TimelineOurServices';
 import TimelineWhyChooseUs from './TimelineWhyUs';
 import TimelinePartners from './TimelinePartners';
-import { useEffect } from 'react';
 import { SERVICES } from '../../constants';
 import Modal from '../Services/Modal';
 
@@ -27,45 +26,60 @@ const timelineData = [
 
 const Timeline = () => {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-    const { t } = useTranslation()
-    const [trackWidth, setTrackWidth] = useState(0)
-    const [activeServiceModal, setActiveServiceModal] = useState(0)
-    const activeServiceData = activeServiceModal ? SERVICES.find(service => service.id === activeServiceModal).modalData : null
+    const { t } = useTranslation();
+    const [trackWidth, setTrackWidth] = useState(0);
+    const [activeServiceModal, setActiveServiceModal] = useState(0);
+    const activeServiceData = activeServiceModal ? SERVICES.find(service => service.id === activeServiceModal).modalData : null;
 
-    const sliderRef = useRef()
-    const NUM_SLIDES = timelineData.length;
+    const sliderRef = useRef();
+    const rafRef = useRef(null);
+    const lastScrollTimeRef = useRef(0); 
 
-    useEffect(() => {
-        const slider = sliderRef.current
-        if (slider) {
-            const onWheel = e => {
-                // console.log(e);
-                if (e.deltaY === 0) return;
-                e.preventDefault();
-                if (e.deltaY > 0) {
-                    setActiveSlideIndex((prevSlide) => Math.min(prevSlide + 1, NUM_SLIDES - 1));
-                } else if (e.deltaY < 0) {
-                    setActiveSlideIndex((prevSlide) => Math.max(prevSlide - 1, 0));
+    const handleScroll = (e) => {
+        e.preventDefault();
+
+        if (!rafRef.current) {
+            rafRef.current = requestAnimationFrame(() => {
+                const delta = e.deltaY;
+                const currentTime = new Date().getTime();
+
+                if (currentTime - lastScrollTimeRef.current > 400) {
+                    if (Math.abs(delta) > 50) {
+                        setActiveSlideIndex((prevSlide) => (delta > 0 ? Math.min(prevSlide + 1, timelineData.length - 1) : Math.max(prevSlide - 1, 0)));
+                        setTrackWidth(timelineData[activeSlideIndex].position);
+                        lastScrollTimeRef.current = currentTime;
+                    }
                 }
-            };
-            slider.addEventListener("wheel", onWheel);
-            return () => {
-                slider.removeEventListener("wheel", onWheel);
-            };
+
+                rafRef.current = null;
+            });
         }
-    }, [sliderRef, NUM_SLIDES])
+    };
 
     useEffect(() => {
-        setTrackWidth(timelineData.find((_, i) => i === activeSlideIndex).position)
-    }, [activeSlideIndex])
+        const slider = sliderRef.current;
+
+        slider.addEventListener('wheel', handleScroll);
+
+        return () => {
+            slider.removeEventListener('wheel', handleScroll);
+            if (rafRef.current) {
+                cancelAnimationFrame(rafRef.current);
+            }
+        };
+        // eslint-disable-next-line
+    }, [sliderRef, activeSlideIndex]);
+
+    useEffect(() => {
+        setTrackWidth(timelineData[activeSlideIndex].position);
+    }, [activeSlideIndex]);
+
     const handleDotClick = (index) => {
         setActiveSlideIndex(index);
     };
 
     return (
-        <div
-            className='timeline'
-        >
+        <div className='timeline'>
             <div className="timeline__wrapper">
                 {timelineData.map((item, index) => (
                     <div
@@ -76,8 +90,7 @@ const Timeline = () => {
                     >
                         <div
                             className={`timeline__dot_circle ${index <= activeSlideIndex ? 'active' : ''} `}
-                        >
-                        </div>
+                        ></div>
                         <p
                             className='timeline__dot_title'
                             onClick={() => handleDotClick(index)}
@@ -89,19 +102,16 @@ const Timeline = () => {
 
                 <div className='timeline__track' style={{ width: trackWidth }}></div>
             </div>
-            <div className='slides' ref={sliderRef} >
+            <div className='slides' ref={sliderRef}>
                 <div className='slides__wrapper' style={{
                     transform: `translateX(${activeSlideIndex * -88}%)`
-
                 }}>
                     <TimelineOurServices services={SERVICES} setActiveServiceModal={setActiveServiceModal} />
                     <TimelineWhyChooseUs />
                     <TimelinePartners />
                 </div>
             </div>
-            {activeServiceData
-                &&
-
+            {activeServiceData &&
                 <Modal
                     heading={t(activeServiceData.headingTranslationName)}
                     cost={activeServiceData.cost}
