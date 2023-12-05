@@ -33,7 +33,7 @@ const OurServicesMobile = () => {
                 <div className='tosmobile__services'>
                     {SERVICES.map((service, i) => (
                         <button key={service.id} onClick={() => setActiveServiceModal(service.id)} className='tosmobile__services_service service'>
-                            <img className='service__icon' src={icons[i]} alt={service.serviceTranslationName.split('_')[1]} />
+                            <img className='service__icon' src={icons[i]} alt={service.iconAlt} />
                             <p className='service__name'>
                                 <span className='service__name_text'>
                                     {t(service.serviceTranslationName)}
@@ -46,9 +46,9 @@ const OurServicesMobile = () => {
                 <ImageWithBackgroundLines image={Robot} className={'tosmobile__imageblock'} alt={'Unfinitx Robot'} />
 
                 <div className='tosmobile__infoblock'>
-                    <h4 className='sub1 tosmobile__infoblock_sub'>
+                    <h5 className='sub1 tosmobile__infoblock_sub'>
                         {t('tos_sub1')}
-                    </h4>
+                    </h5>
                     <p className='text tosmobile__infoblock_text'>
                         {t('tos_text')}
                     </p>

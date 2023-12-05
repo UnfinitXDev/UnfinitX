@@ -25,15 +25,15 @@ const MobileHeader = () => {
         <header className='header'>
             {
                 location.pathname === '/'
-                    ? <Link className='header__mobile_logo' to={'/'} style={{ display: 'flex', alignItems: 'center' }}>
+                    ? <NavLink className='header__mobile_logo' to='/' style={{ display: 'flex', alignItems: 'center' }}>
                         <img src={Logo} alt='UnfinitX Logo' />
-                    </Link>
+                    </NavLink>
                     : <h1 className='heading page__heading'>{t(location.pathname.slice(1) + '_mobile_heading')}</h1>
             }
             <Menu className='burger' right width={'50%'} customBurgerIcon={<MenuIcon />} customCrossIcon={<CloseIcon />}>
-                <Link to='/' className='burger__logo'>
+                <NavLink to='/' className='burger__logo'>
                     <img src={BurgerLogo} alt='UnfinitX logo' />
-                </Link>
+                </NavLink>
                 <div className='burger__menu'>
                     <div className='burger__menu_gradient' data-position='left'></div>
 
