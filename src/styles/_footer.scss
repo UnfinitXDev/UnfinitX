@@ -92,12 +92,15 @@
                 column-gap: 0.8vh;
                 color: $white;
                 font-family: "Roboto", sans-serif;
-                font-size: 1.37vh;
+                font-size: 1.7vh;
                 font-weight: 400;
                 letter-spacing: 0.237vw;
                 svg {
                     font-size: 1.37vh;
+                    width: 1.37vh;
+                    height: 1.37vh;
                 }
+
             }
             &_link {
                 text-decoration: none;
