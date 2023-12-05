@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import Robot from '../../assets/img/tos.png'
+import Robot from '../../assets/img/tos.webp'
 
 import WebIcon from '../../assets/img/web.svg'
 import MobileIcon from '../../assets/img/device_icon.svg'
@@ -46,9 +46,9 @@ const OurServicesMobile = () => {
                 <ImageWithBackgroundLines image={Robot} className={'tosmobile__imageblock'} alt={'Unfinitx Robot'} />
 
                 <div className='tosmobile__infoblock'>
-                    <h3 className='sub1 tosmobile__infoblock_sub'>
+                    <p className='sub1 tosmobile__infoblock_sub'>
                         {t('tos_sub1')}
-                    </h3>
+                    </p>
                     <p className='text tosmobile__infoblock_text'>
                         {t('tos_text')}
                     </p>

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import Robot from '../../assets/img/twcs.png'
+import Robot from '../../assets/img/twcs.webp'
 import ImageWithBackgroundLines from "../ImageWithBackgroundLines"
 
 const WhyUsMobile = () => {

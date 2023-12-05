@@ -1,4 +1,4 @@
-import Robot from '../../assets/img/tpartners.png'
+import Robot from '../../assets/img/tpartners.webp'
 import ImageWithBackgroundLines from '../ImageWithBackgroundLines'
 import { useTranslation } from 'react-i18next'
 import Partners from '../../assets/img/partners.webp'

@@ -3,7 +3,7 @@ import Logo from '../assets/img/logo.svg'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import Robot from '../assets/img/footer__robot.png'
+import Robot from '../assets/img/footer__robot.webp'
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
