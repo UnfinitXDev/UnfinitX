@@ -46,9 +46,9 @@ const OurServicesMobile = () => {
                 <ImageWithBackgroundLines image={Robot} className={'tosmobile__imageblock'} alt={'Unfinitx Robot'} />
 
                 <div className='tosmobile__infoblock'>
-                    <h5 className='sub1 tosmobile__infoblock_sub'>
+                    <h3 className='sub1 tosmobile__infoblock_sub'>
                         {t('tos_sub1')}
-                    </h5>
+                    </h3>
                     <p className='text tosmobile__infoblock_text'>
                         {t('tos_text')}
                     </p>
